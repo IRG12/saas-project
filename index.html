@@ -7,24 +7,47 @@
     <meta name="description" content="Isaiah's Saas" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- The order of your links are important. The browser will read and load your code "line by line" -->
-    <link rel="stylesheet" href="" />
+    <link rel="stylesheet" href="./css/default.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
   </head>
   <body>
-    <div class="nav-hero-container">
+    <svg viewBox="0 0 1425 500" preserveAspectRatio="xMidYMid meet">
+      <defs>
+        <!-- <polygon style="stroke:purple;stroke-width:1"> -->
+        <!-- points>>> top-left(x,y), top-right(x,y), bottom-right(x,y), bottom-left(x,y) -->
+        <polygon id="rec-left" points="0 0, 1300 0, 1110 380, 0 500" />
+        <polygon id="rec-right" points="1300 0, 1425 0, 1425 350, 1110 380" />
+
+        <linearGradient id="myGradient" gradientTransform="rotate(130)">
+          <stop offset="1%" stop-color="rgba(240,240,240, 0.7)" />
+          <stop offset="90%" stop-color="rgba(240,240,240,0.1)" />
+        </linearGradient>
+        <linearGradient id="myGradient2" gradientTransform="rotate(130)">
+          <stop offset="10%" stop-color="rgba(206, 218, 236, 0.7)" />
+          <stop offset="100%" stop-color="rgba(206, 218, 236, 0.7)" />
+        </linearGradient>
+      </defs>
+
+      <!-- using my graphical objects -->
+      <use href="#rec-left" fill="url('#myGradient')" />
+      <use href="#rec-right" fill="url('#myGradient2')" />
+    </svg>
+    <div class="nav-hero site-container">
       <nav>
-        <div>
+        <a href="">
           <img src="./saas-project-assets/project_logo/logo.svg" alt="Front" />
-        </div>
-        <div class="nav-items">
-          <a class="nav-item" href="">Home</a>
-          <a class="nav-item" href="">Features</a>
-          <a class="nav-item" href="">Learn</a>
-          <a class="nav-item" href="">Pricing</a>
-          <a class="nav-item" href="">Hire us</a>
-          <a class="nav-item" href="">Buy Now</a>
-        </div>
+        </a>
+        <ul class="nav-items">
+          <li class="nav-link"><a href="">Home</a></li>
+          <li class="nav-link"><a href="">Features</a></li>
+          <li class="nav-link"><a href="">Learn</a></li>
+          <li class="nav-link"><a href="">Pricing</a></li>
+          <li class="nav-link"><a href="">Hire us</a></li>
+          <li class="nav-link"><a href="">Buy Now</a></li>
+        </ul>
       </nav>
-      <div class="hero-container">
+      <div class="hero-wrapper">
         <div>
           <h1>Empowering teams with the freedom</h1>
           <p>Own the unlimited power of the web development</p>
@@ -38,7 +61,7 @@
             </div>
           </div>
         </div>
-        <div>
+        <div class="logos">
           <img src="./saas-project-assets/logo_icons/asana.png" alt="Asana" />
           <img
             src="./saas-project-assets/logo_icons/atlassian.png"

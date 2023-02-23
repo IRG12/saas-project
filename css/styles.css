@@ -1,1 +1,43 @@
 /* custom styles */
+
+body {
+  position: relative;
+}
+
+svg {
+  position: absolute;
+}
+
+.site-container {
+  max-width: 1450px;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 1;
+  position: relative;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav a img {
+  height: 50px;
+  width: 150px;
+}
+
+.nav-items {
+  display: flex;
+  align-items: center;
+  gap: 0px 20px;
+}
+
+.logos img {
+  height: 50px;
+  width: 50px;
+}
+
+.hero-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+}
