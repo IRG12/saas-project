@@ -19,6 +19,7 @@ svg {
 nav {
   display: flex;
   justify-content: space-between;
+  margin-top: 20px;
 }
 
 nav a img {
@@ -32,12 +33,30 @@ nav a img {
   gap: 0px 20px;
 }
 
-.logos img {
-  height: 50px;
-  width: 50px;
+.hero-wrapper {
+  margin-top: 50px;
+}
+
+.hero-wrapper-links {
+  display: flex;
+  gap: 0px 30px;
 }
 
 .hero-wrapper {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+}
+
+.logos img {
+  height: 50px;
+  width: 50px;
+}
+
+.benefits-container {
+  text-align: center;
+  margin-top: 200px;
+}
+
+.benefits-wrapper {
+  display: flex;
 }
