@@ -66,5 +66,52 @@ nav a img {
 }
 
 .benefits-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  padding-top: 100px;
+  margin: 0 30px;
+}
+
+.benefit-card img {
+  height: 50px;
+  width: 50px;
+}
+
+.benefits-wrapper-2 {
+  background: rgba(240, 240, 240, 0.4);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  padding-top: 125px;
+  margin: 0 30px;
+}
+
+.benefits-wrapper-2-left {
   display: flex;
+  flex-flow: column nowrap;
+  justify-content: start;
+  padding-left: 50px;
+}
+
+.benefits-wrapper-2-left h2 {
+  font-size: 30px;
+}
+
+.benefits-wrapper-2-right {
+  text-align: right;
+}
+
+.benefits-wrapper-2-right img {
+  width: 80%;
+  object-fit: cover;
+}
+
+.point-icon {
+  background: rgba(240, 240, 240);
+  border-radius: 50px;
+  width: 20px;
+  text-align: center;
+}
+
+.point-icon i {
+  font-size: 8px;
 }
