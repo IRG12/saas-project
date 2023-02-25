@@ -14,12 +14,13 @@ svg {
   margin-right: auto;
   z-index: 1;
   position: relative;
+  padding-top: 20px;
 }
 
 nav {
   display: flex;
   justify-content: space-between;
-  margin-top: 20px;
+  /* margin-top: 20px; */
 }
 
 nav a img {
@@ -47,14 +48,21 @@ nav a img {
   grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
 }
 
+.logos {
+  border: 10px dashed yellow;
+}
+
 .logos img {
   height: 50px;
   width: 50px;
 }
 
 .benefits-container {
+  margin-top: 50px;
+}
+
+.title-description {
   text-align: center;
-  margin-top: 200px;
 }
 
 .benefits-wrapper {
