@@ -204,3 +204,32 @@ nav a img {
 .client img {
   aspect-ratio: 1 / 1;
 }
+
+.sales-wrapper {
+  display: flex;
+
+  width: 100%;
+}
+
+.sales-benefits-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+.woman {
+  height: auto;
+  width: 50px;
+}
+
+.woman img {
+  aspect-ratio: 1/1;
+}
+
+.man {
+  height: auto;
+  width: 100px;
+}
+
+.man img {
+  aspect-ratio: 1/1;
+}
