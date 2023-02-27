@@ -107,27 +107,27 @@ nav a img {
 
 .why-points-wrapper {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   margin: 0 100px;
-  max-width: 1500px;
+  max-width: 1300px;
 }
 
-.why-point {
-  flex: 1;
-}
-
-/* .point-hr {
+.points-icon {
   display: flex;
-  padding: 0px 3px;
-} */
+  padding-left: 15px;
+  max-width: 1250px;
+}
 
 .point-icon {
   background: rgba(240, 240, 240);
   border-radius: 50px;
-  width: 40px;
+  width: 150px;
   height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 0px 5px;
 }
 
 .point-icon i {
@@ -135,16 +135,40 @@ nav a img {
   z-index: 1;
 }
 
-.hr-wrapper {
+.horizontal-rule-wrapper {
   display: flex;
-  justify-content: center;
   align-items: center;
-  width: 100%;
   height: 40px;
+  width: 100%;
 }
 
-.hr {
-  flex-grow: 1;
+.horizontal-rule {
   height: 2px;
-  background: rgba(240, 240, 240);
+  width: inherit;
+  background: red;
+}
+
+.points-description {
+  display: flex;
+  max-width: 1300px;
+  justify-content: space-between;
+}
+
+.point-description {
+  position: relative;
+}
+
+.components {
+  position: absolute;
+  right: -32px;
+  width: 90px;
+}
+
+.combined-components {
+}
+
+.page-layouts {
+  position: absolute;
+  right: 18px;
+  width: 90px;
 }
