@@ -154,21 +154,38 @@ nav a img {
   justify-content: space-between;
 }
 
-.point-description {
-  position: relative;
-}
-
 .components {
-  position: absolute;
-  right: -32px;
-  width: 90px;
+  padding-left: 20px;
 }
 
 .combined-components {
+  padding-right: 15px;
 }
 
 .page-layouts {
-  position: absolute;
-  right: 18px;
-  width: 90px;
+  padding-right: 22px;
+}
+
+.testimonial-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+}
+
+.testimonial-img {
+  height: 300px;
+  width: 300px;
+}
+
+.testimonial-img img {
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+.company {
+  height: 50px;
+  width: 100px;
+}
+
+.company img {
+  aspect-ratio: 1 / 1;
 }
