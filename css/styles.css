@@ -207,13 +207,18 @@ nav a img {
 
 .sales-wrapper {
   display: flex;
-
-  width: 100%;
+  justify-content: center;
+  /* width: 100%; */
 }
 
 .sales-benefits-wrapper {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+.hire-us-form {
+  display: flex;
+  justify-content: center;
 }
 
 .woman {
