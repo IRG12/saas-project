@@ -1,7 +1,18 @@
 /* custom styles */
 
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap");
+
+:root {
+  --link: #1363df;
+  --weight-6: 600;
+  --light-gray: rgba(240, 240, 240);
+  --gray: #818589;
+  --white: #fff;
+}
+
 body {
   position: relative;
+  font-family: "Inter", Courier, monospace;
 }
 
 svg {
@@ -32,6 +43,21 @@ nav a img {
   display: flex;
   align-items: center;
   gap: 0px 20px;
+  font-weight: var(--weight-6);
+  font-size: 13px;
+}
+
+.nav-link a {
+  text-decoration: none;
+  color: var(--gray);
+}
+
+.nav-link .blue-border {
+  background: var(--link);
+  color: var(--white);
+  padding: 12px 20px;
+  border-radius: 50px;
+  margin: 0px 15px;
 }
 
 .hero-wrapper {
@@ -46,6 +72,43 @@ nav a img {
 .hero-wrapper {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+}
+
+.hero-wrapper-left p {
+  color: var(--gray);
+}
+.hero-wrapper-links {
+  display: flex;
+  align-items: center;
+}
+
+.play-video i,
+a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+.play-video i {
+  font-size: 18px;
+}
+
+.play-video a {
+  font-size: 12px;
+}
+
+.play-video {
+  display: flex;
+  align-items: center;
+  gap: 0px 10px;
+  background: var(--link);
+  padding: 12px 20px;
+  border-radius: 50px;
+}
+
+.learn-more a {
+  text-decoration: none;
+  color: var(--link);
+  font-weight: var(--weight-6);
 }
 
 .logos {
@@ -65,6 +128,10 @@ nav a img {
   text-align: center;
 }
 
+.title-description p {
+  color: var(--gray);
+}
+
 .benefits-wrapper {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -75,6 +142,10 @@ nav a img {
 .benefit-card img {
   height: 50px;
   width: 50px;
+}
+
+.benefit-card p {
+  color: var(--gray);
 }
 
 .benefits-wrapper-2 {
@@ -125,7 +196,8 @@ nav a img {
 }
 
 .point-icon {
-  background: rgba(240, 240, 240);
+  background: var(--link);
+  opacity: 0.1;
   border-radius: 50px;
   width: 40px;
   height: 40px;
@@ -137,8 +209,10 @@ nav a img {
 }
 
 .point-icon i {
+  color: var(--link);
   font-size: 4px;
-  z-index: 1;
+  position: relative;
+  z-index: 100;
 }
 
 .horizontal-rule-wrapper {
@@ -151,7 +225,7 @@ nav a img {
 .horizontal-rule {
   height: 2px;
   width: inherit;
-  background: red;
+  background: var(--light-gray);
 }
 
 .basic-elements {
@@ -164,6 +238,11 @@ nav a img {
 
 .page-layouts {
   padding-left: 40px;
+}
+
+.templates-ei-wrapper {
+  margin: 0 30px;
+  object-fit: cover;
 }
 
 .testimonial-wrapper {
