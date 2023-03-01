@@ -106,28 +106,34 @@ nav a img {
 }
 
 .why-points-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 350px));
+  justify-content: center;
+  margin-left: 110px;
+}
+
+.point {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 0 100px;
-  max-width: 1300px;
 }
 
-.points-icon {
+.icon-rule {
   display: flex;
-  padding-left: 15px;
-  max-width: 1250px;
+  margin-left: 50px;
+  width: 100%;
 }
 
 .point-icon {
   background: rgba(240, 240, 240);
   border-radius: 50px;
-  width: 150px;
+  width: 40px;
   height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0px 5px;
+  padding: 0px 20px;
+  margin: 0px 3px;
 }
 
 .point-icon i {
@@ -148,22 +154,16 @@ nav a img {
   background: red;
 }
 
-.points-description {
-  display: flex;
-  max-width: 1300px;
-  justify-content: space-between;
+.basic-elements {
+  padding-left: 24px;
 }
 
 .components {
-  padding-left: 20px;
-}
-
-.combined-components {
-  padding-right: 15px;
+  padding-left: 28px;
 }
 
 .page-layouts {
-  padding-right: 22px;
+  padding-left: 40px;
 }
 
 .testimonial-wrapper {
