@@ -32,7 +32,6 @@ svg {
 nav {
   display: flex;
   justify-content: space-between;
-  /* margin-top: 20px; */
 }
 
 nav a img {
@@ -168,6 +167,10 @@ a {
 
 .benefits-wrapper-2-left h2 {
   font-size: 30px;
+}
+
+.benefits-wrapper-2-left .play-video {
+  width: fit-content;
 }
 
 .benefits-wrapper-2-right {
@@ -317,15 +320,76 @@ a {
   aspect-ratio: 1 / 1;
 }
 
+.price-container {
+  margin-bottom: 100px;
+}
+
 .sales-wrapper {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 500px));
   justify-content: center;
-  /* width: 100%; */
+  margin-top: 75px;
+}
+
+.price-card {
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 40px 30px 70px 30px;
+  box-shadow: 0px 10px 10px 5px var(--light-gray);
+}
+
+.price-rate {
+  border-bottom: 2px solid var(--dark-gray);
+  width: 80%;
+  padding: 30px 0px;
+}
+
+.price {
+  font-size: 50px;
+}
+
+.rate {
+  color: var(--dark-gray);
+}
+
+.guaranteed-terms {
+  padding: 20px 0px 40px 0px;
+}
+
+.video-link .play-video {
+  width: fit-content;
+  margin-bottom: 15px;
 }
 
 .sales-benefits-wrapper {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  gap: 35px;
+}
+
+.sales-benefits-wrapper p {
+  font-size: 14px;
+}
+
+.sales-benefits-wrapper img {
+  height: 50px;
+  width: 50px;
+}
+
+.cancel-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0px 10px;
+}
+
+.sketch {
+  background: #13df8f;
+  color: var(--white);
+  border-radius: 50px;
+  padding: 3px 7px;
+  font-size: 12px;
 }
 
 .hire-us-form {
