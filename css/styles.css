@@ -292,6 +292,10 @@ a {
   line-height: 1.5;
 }
 
+.role {
+  color: var(--dark-gray);
+}
+
 .gray {
   color: rgba(54, 69, 79, 0.8);
 }
@@ -392,25 +396,77 @@ a {
   font-size: 12px;
 }
 
-.hire-us-form {
-  display: flex;
+.hire-us-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 500px));
   justify-content: center;
+  background: #002d62;
+  padding: 30px 0px;
+}
+
+.hire-us-wrapper {
+  color: var(--white);
+}
+
+.pitch {
+  border-bottom: 2px solid var(--white);
+  width: 30%;
+  padding: 30px 0px;
+}
+
+.hire-us-wrapper .pitch p,
+.role {
+  color: var(--white);
+  opacity: 0.4;
+}
+
+.pitch h2 {
+  padding: 10px 0px;
+}
+
+.pitch p {
+  font-size: 14px;
+}
+
+.testimonial-quote {
+  padding: 30px 0px;
+}
+
+.hire-us-wrapper .name-and-role {
+  padding: 30px 0px;
+}
+
+.hire-us-wrapper .name-and-role .name {
+  color: var(--white);
+}
+
+.hire-us-wrapper .role {
+  font-size: 12px;
+}
+
+.models {
+  display: flex;
+  align-items: center;
+  gap: 0px 25px;
+  padding: 20px 0px;
 }
 
 .woman {
   height: auto;
-  width: 50px;
+  width: 40px;
 }
 
 .woman img {
   aspect-ratio: 1/1;
+  border-radius: 50px;
 }
 
 .man {
   height: auto;
-  width: 100px;
+  width: 60px;
 }
 
 .man img {
   aspect-ratio: 1/1;
+  border-radius: 50px;
 }
