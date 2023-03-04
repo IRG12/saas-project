@@ -488,6 +488,7 @@ footer {
   justify-content: center;
   align-items: center;
   width: 100%;
+  gap: 0px 100px;
 }
 
 .footer-top-left {
@@ -504,4 +505,30 @@ footer {
   grid-template-columns: repeat(auto-fit, minmax(150px, 200px));
   justify-content: center;
   width: 60%;
+}
+
+.footer-bottom-top {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 400px));
+  justify-content: space-between;
+  width: 100%;
+  padding: 30px 0px;
+}
+
+.privacy-terms-site-wrapper {
+  display: flex;
+}
+
+.social-icons-wrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer-bottom-bottom {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.rights {
+  padding: 20px 0px;
 }
