@@ -3,12 +3,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap");
 
 :root {
-  --link: #1363df;
+  --link: #1364dd;
+  --blue-bg: rgb(19, 100, 221, 0.1);
   --weight-6: 600;
+  --weight-9: 900;
   --gray: #818589;
   --light-gray: rgba(240, 240, 240);
-  --dark-gray: rgba(54, 69, 79, 0.8);
+  --dark-gray: rgba(101, 101, 101, 0.8);
   --white: #fff;
+  --black: #000;
 }
 
 body {
@@ -480,15 +483,17 @@ a {
 
 footer {
   width: 100%;
+  color: var(--dark-gray);
+  padding: 0px 20px;
 }
 
 .footer-top {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
   width: 100%;
   gap: 0px 100px;
+  padding: 60px 0px 30px 0px;
 }
 
 .footer-top-left {
@@ -498,6 +503,7 @@ footer {
 .footer-top-left-logo {
   height: fit-content;
   width: 100px;
+  padding-bottom: 14px;
 }
 
 .footer-top-right {
@@ -505,6 +511,18 @@ footer {
   grid-template-columns: repeat(auto-fit, minmax(150px, 200px));
   justify-content: center;
   width: 60%;
+}
+
+.service-column h4 {
+  color: var(--black);
+  padding-bottom: 10px;
+  font-weight: var(--weight-9);
+}
+
+.services li {
+  padding: 4px 0px;
+  font-size: 14px;
+  word-spacing: 1.5px;
 }
 
 .footer-bottom-top {
@@ -517,18 +535,56 @@ footer {
 
 .privacy-terms-site-wrapper {
   display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+.privacy-terms-site-wrapper i {
+  padding: 0px 7px;
+  font-size: 10px;
 }
 
 .social-icons-wrapper {
   display: flex;
   justify-content: flex-end;
+  gap: 0px 20px;
+}
+
+.social-icon,
+.select-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--blue-bg);
+  padding: 8px 10px;
+  border-radius: 5px;
+}
+
+.social-icon i {
+  font-size: 12px;
+}
+
+.select-wrapper select {
+  background: transparent;
+  border: none;
+  outline: none;
 }
 
 .footer-bottom-bottom {
   text-align: center;
   padding-bottom: 20px;
+  font-size: 14px;
 }
 
 .rights {
   padding: 20px 0px;
+}
+
+.rights i {
+  font-size: 10px;
+}
+
+.disclaimer {
+  line-height: 1.5;
+  word-spacing: 1.5px;
 }
