@@ -478,7 +478,51 @@ a {
   background: var(--white);
   border-radius: 10px;
   padding: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+  /* align-items: center; */
+}
+
+.user-input-wrapper {
+  display: flex;
+}
+
+.user-input-wrapper input {
+  flex: 1;
+}
+
+.selects-wrapper {
+  display: flex;
+}
+
+.selects-wrapper select {
+  flex: 1;
+}
+
+.checkbox-terms-wrapper {
+  display: flex;
+  padding: 20px 0px;
+}
+
+.privacy-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 0px 30px;
+}
+
+.privacy-wrapper a {
+  color: var(--dark-gray);
+  border-bottom: 2px dashed var(--dark-gray);
+}
+
+.form-link {
   text-align: center;
+  margin: 20px 0px;
 }
 
 footer {
