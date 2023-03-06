@@ -23,8 +23,9 @@ body > * {
   flex: 1;
 }
 
-.site-container {
+.nav-hero-container {
   position: relative;
+  padding-bottom: 100px;
 }
 
 svg {
@@ -219,6 +220,7 @@ a {
 
 .title-description p {
   color: var(--dark-gray);
+  line-height: 1.5;
 }
 
 .benefits-wrapper {
@@ -227,6 +229,7 @@ a {
   justify-content: space-around;
   padding-top: 100px;
   margin: 0 30px;
+  padding-bottom: 100px;
 }
 
 .benefit-card {
@@ -246,6 +249,7 @@ a {
 .benefit-card p {
   color: var(--dark-gray);
   color: var(--dark-gray);
+  line-height: 1.5;
 }
 
 .benefits-wrapper-2 {
@@ -280,41 +284,48 @@ a {
   object-fit: cover;
 }
 
+.why-container {
+  padding: 100px 0px;
+}
+
 .why-points-wrapper {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 350px));
   justify-content: center;
   margin-left: 110px;
+  padding: 75px 0px 100px 0px;
 }
 
 .point {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  gap: 20px 0px;
 }
 
 .icon-rule {
   display: flex;
+  align-items: center;
   margin-left: 50px;
   width: 100%;
 }
 
 .point-icon {
-  background: var(--link);
+  background: var(--blue-bg);
   border-radius: 50px;
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0px 20px;
+  padding: 0px 25px;
   margin: 0px 3px;
   position: relative;
 }
 
 .point-icon i {
   color: var(--link);
-  font-size: 4px;
+  font-size: 6px;
 }
 
 .horizontal-rule-wrapper {
