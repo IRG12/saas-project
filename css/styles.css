@@ -75,11 +75,19 @@ nav a img {
 
 .hero-wrapper {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 600px));
+  justify-content: space-around;
+  align-items: center;
+}
+
+.hero-wrapper-left h1 {
+  font-size: 40px;
+  font-weight: 500;
 }
 
 .hero-wrapper-left p {
   color: var(--dark-gray);
+  padding: 10px 0px 20px 0px;
 }
 .hero-wrapper-links {
   display: flex;
@@ -115,11 +123,52 @@ a {
   font-weight: var(--weight-6);
 }
 
-.logos {
+.hero-wrapper-right {
   border: 10px dashed yellow;
+  position: relative;
+  padding: 145px;
 }
 
-.logos img {
+.logo-wrapper {
+  position: absolute;
+}
+
+.logo-wrapper[data-type="asana"] {
+  top: 0;
+  right: 0;
+}
+
+.logo-wrapper[data-type="atlassian"] {
+  top: 0;
+  right: 400px;
+}
+
+.logo-wrapper[data-type="calendar"] {
+  bottom: 0;
+  right: 0;
+}
+
+.logo-wrapper[data-type="google-a"] {
+  bottom: 50px;
+  right: 220px;
+}
+
+.logo-wrapper[data-type="google"] {
+  top: 0;
+  left: 0;
+}
+
+.logo-wrapper[data-type="paypal"] {
+  bottom: 110px;
+  left: 0;
+}
+
+.logo-wrapper[data-type="weave"] {
+  bottom: 110px;
+  right: 100px;
+}
+
+.logo-wrapper img {
   height: 50px;
   width: 50px;
 }
