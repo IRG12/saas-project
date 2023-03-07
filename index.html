@@ -172,7 +172,10 @@
               alt="Premium"
             />
           </div>
-          <h3>Premium</h3>
+          <span class="sketch-wrapper">
+            <h3>Premium</h3>
+            <span class="sketch">sketch</span>
+          </span>
           <p>
             It is a long established fact that a reader will be distracted by
             the readable content of a page when looking at it's content
@@ -428,7 +431,7 @@
               src="./saas-project-assets/icons/cancel.svg"
               alt="Price Tag"
             />
-            <span class="cancel-wrapper">
+            <span class="sketch-wrapper">
               <h4>Cancel anytime</h4>
               <span class="sketch">sketch</span>
             </span>
@@ -506,15 +509,15 @@
             </strong>
           </p>
           <div class="user-input-wrapper">
-            <input type="text" placeholder="First Name" />
-            <input type="text" placeholder="Last Name" />
+            <input class="input-border" type="text" placeholder="First Name" />
+            <input class="input-border" type="text" placeholder="Last Name" />
           </div>
           <div class="user-input-wrapper">
-            <input type="text" placeholder="First Name" />
-            <input type="text" placeholder="Last Name" />
+            <input class="input-border" type="text" placeholder="First Name" />
+            <input class="input-border" type="text" placeholder="Last Name" />
           </div>
           <div class="selects-wrapper">
-            <select>
+            <select class="input-border">
               <option value="none" selected>Budget</option>
               <option value="100">500</option>
               <option value="1000">1,000</option>
@@ -522,7 +525,7 @@
               <option value="100,000">100,000</option>
               <option value="1,000,000">1,000,000</option>
             </select>
-            <select>
+            <select class="input-border">
               <option value="none" selected>Country</option>
               <option value="Afghanistan">Afghanistan</option>
               <option value="Åland Islands">Åland Islands</option>
@@ -558,12 +561,13 @@
               <option value="Bulgaria">Bulgaria</option>
             </select>
           </div>
-          <textarea name="" rows="10" cols="50">
+          <textarea class="input-border" name="" rows="10" cols="50">
 Tell us more about your projects, needs, and timeline please... </textarea
           >
           <div class="checkbox-terms-wrapper">
             <div class="checkbox">
-              <input type="checkbox" id="" name="" />
+              <input type="checkbox" id="custom-checkbox" name="" />
+              <label for="custom-checkbox"></label>
             </div>
             <div class="terms">
               <label for=""
@@ -574,10 +578,10 @@ Tell us more about your projects, needs, and timeline please... </textarea
           </div>
           <div class="privacy-wrapper">
             <label for=""
-              ><a href="" target="_blank">View privacy-police</a></label
+              ><a href="" target="_blank">View privacy police</a></label
             >
             <label for=""
-              ><a href="" target="_blank">View privacy-police</a></label
+              ><a href="" target="_blank">View privacy police</a></label
             >
           </div>
           <div class="link form-link">
