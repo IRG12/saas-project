@@ -5,11 +5,13 @@
 :root {
   --link: #1364dd;
   --blue-bg: rgb(19, 100, 221, 0.1);
+  --weight-5: 500;
   --weight-6: 600;
+  --weight-7: 700;
   --weight-9: 900;
-  --gray: rgb(129, 133, 137, 0.5);
+  --gray: rgb(129, 133, 137);
   --light-gray: rgba(240, 240, 240);
-  --dark-gray: rgba(101, 101, 101, 0.8);
+  --dark-gray: rgba(101, 101, 101, 0.9);
   --white: #fff;
   --black: #000;
 }
@@ -85,7 +87,7 @@ nav a img {
 
 .hero-wrapper-left h1 {
   font-size: 40px;
-  font-weight: 500;
+  font-weight: var(--weight-5);
 }
 
 .hero-wrapper-left p {
@@ -127,7 +129,6 @@ a {
 }
 
 .hero-wrapper-right {
-  /* border: 10px dashed yellow; */
   position: relative;
   padding: 145px;
 }
@@ -137,7 +138,6 @@ a {
   background: var(--white);
   border-radius: 50%;
   box-shadow: 0px 0px 10px 0px var(--gray);
-  /* padding: 15px; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -145,7 +145,6 @@ a {
 
 .logo-wrapper img {
   object-fit: contain;
-  /* height: auto; */
   width: 100%;
 }
 
@@ -247,8 +246,9 @@ a {
 }
 
 .benefit-card p {
-  color: var(--dark-gray);
-  color: var(--dark-gray);
+  color: var(--black);
+  opacity: 0.6;
+  font-weight: var(--weight-5);
   line-height: 1.5;
 }
 
@@ -269,6 +269,8 @@ a {
 
 .benefits-wrapper-2-left h2 {
   font-size: 30px;
+  font-weight: var(--weight-5);
+  padding-bottom: 30px;
 }
 
 .benefits-wrapper-2-left .play-video {
@@ -377,6 +379,10 @@ a {
   object-fit: cover;
 }
 
+.testimonial {
+  font-weight: var(--weight-6);
+}
+
 .dots {
   position: absolute;
   top: 95px;
@@ -401,8 +407,15 @@ a {
   line-height: 1.5;
 }
 
-.role {
-  color: var(--dark-gray);
+.name {
+  font-weight: var(--weight-7);
+}
+
+.name-and-role .role {
+  color: var(--black);
+  opacity: 0.7;
+  font-weight: var(--weight-7);
+  font-size: 12px;
 }
 
 .gray {
@@ -450,7 +463,6 @@ a {
   flex-direction: column;
   justify-content: space-evenly;
   padding: 40px 30px 70px 30px;
-  /* box-shadow: 0px 10px 10px 5px var(--light-gray); */
   box-shadow: 0px 0px 10px 0px var(--gray);
 }
 
@@ -466,10 +478,14 @@ a {
 
 .rate {
   color: var(--dark-gray);
+  font-weight: var(--weight-5);
 }
 
 .guaranteed-terms {
   padding: 20px 0px 40px 0px;
+  color: var(--dark-gray);
+  font-weight: var(--weight-5);
+  line-height: 1.5;
 }
 
 .video-link .play-video {
@@ -477,19 +493,32 @@ a {
   margin-bottom: 15px;
 }
 
-.sales-benefits-wrapper {
+.credit-card-terms {
+  color: var(--dark-gray);
+  font-size: 12px;
+  font-weight: var(--weight-5);
+}
+
+.perks-wrapper {
   display: flex;
   flex-wrap: wrap;
   gap: 35px;
 }
 
-.sales-benefits-wrapper p {
-  font-size: 14px;
-}
-
-.sales-benefits-wrapper img {
+.perk img {
   height: 50px;
   width: 50px;
+}
+
+.perk h4 {
+  padding: 20px 0px;
+}
+
+.perk p {
+  font-size: 14px;
+  font-weight: var(--weight-5);
+  color: var(--dark-gray);
+  line-height: 1.5;
 }
 
 .cancel-wrapper {
@@ -592,7 +621,6 @@ form {
   flex-direction: column;
   justify-content: space-around;
   height: 100%;
-  /* align-items: center; */
 }
 
 .user-input-wrapper {
@@ -673,6 +701,7 @@ footer {
 .services li {
   padding: 4px 0px;
   font-size: 14px;
+  font-weight: var(--weight-5);
   word-spacing: 1.5px;
 }
 
@@ -688,6 +717,7 @@ footer {
   display: flex;
   align-items: center;
   font-size: 14px;
+  font-weight: var(--weight-5);
 }
 
 .privacy-terms-site-wrapper i {
@@ -725,6 +755,7 @@ footer {
   text-align: center;
   padding-bottom: 20px;
   font-size: 14px;
+  font-weight: var(--weight-5);
 }
 
 .rights {
