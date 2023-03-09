@@ -17,8 +17,8 @@
         <defs>
           <!-- <polygon style="stroke:purple;stroke-width:1"> -->
           <!-- points>>> top-left(x,y), top-right(x,y), bottom-right(x,y), bottom-left(x,y) -->
-          <polygon id="rec-left" points="0 0, 1300 0, 1110 310, 0 400" />
-          <polygon id="rec-right" points="1300 0, 1425 0, 1425 280, 1110 310" />
+          <polygon id="rec-left" points="0 0, 1300 0, 1110 350, 0 450" />
+          <polygon id="rec-right" points="1300 0, 1425 0, 1425 320, 1110 350" />
 
           <linearGradient id="myGradient" gradientTransform="rotate(130)">
             <stop offset="1%" stop-color="rgba(240,240,240, 0.7)" />
@@ -172,9 +172,9 @@
               alt="Premium"
             />
           </div>
-          <span class="sketch-wrapper">
+          <span class="notification-wrapper">
             <h3>Premium</h3>
-            <span class="sketch">sketch</span>
+            <span class="notification" data-type="sketch">sketch</span>
           </span>
           <p>
             It is a long established fact that a reader will be distracted by
@@ -431,9 +431,9 @@
               src="./saas-project-assets/icons/cancel.svg"
               alt="Price Tag"
             />
-            <span class="sketch-wrapper">
+            <span class="notification-wrapper">
               <h4>Cancel anytime</h4>
-              <span class="sketch">sketch</span>
+              <span class="notification" data-type="sketch">sketch</span>
             </span>
             <p>
               If it's not for you, just cancel, no <br />
@@ -621,8 +621,12 @@ Tell us more about your projects, needs, and timeline please... </textarea
               <ul class="services">
                 <li>About</li>
                 <li>
-                  <span>Careers</span>
-                  <span>We're hiring</span>
+                  <span class="notification-wrapper">
+                    <span>Careers</span>
+                    <span class="notification" data-type="we-hiring"
+                      >We're hiring</span
+                    >
+                  </span>
                 </li>
                 <li>Blog</li>
                 <li>Customers</li>

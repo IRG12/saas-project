@@ -3,12 +3,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap");
 
 :root {
-  --link: #1364dd;
-  --blue-bg: rgb(19, 100, 221, 0.1);
   --weight-5: 500;
   --weight-6: 600;
   --weight-7: 700;
   --weight-9: 900;
+  --link: #1364dd;
+  --blue-bg: rgb(19, 100, 221, 0.1);
   --gray: rgb(129, 133, 137);
   --light-gray: rgba(240, 240, 240);
   --dark-gray: rgba(101, 101, 101, 0.9);
@@ -21,13 +21,16 @@ body {
   overflow-x: hidden;
 }
 
-body > * {
+/* body > * {
   flex: 1;
+} */
+section {
+  padding: 50px 0px;
 }
 
 .nav-hero-container {
   position: relative;
-  padding-bottom: 100px;
+  padding-top: 0;
 }
 
 svg {
@@ -39,7 +42,7 @@ nav {
   display: flex;
   justify-content: space-around;
   padding-top: 20px;
-  gap: 0px 720px;
+  gap: 0px 670px;
 }
 
 nav a img {
@@ -53,7 +56,7 @@ nav a img {
   gap: 0px 20px;
   font-weight: var(--weight-6);
   font-size: 14px;
-  padding-left: 15px;
+  padding-left: 50px;
 }
 
 .nav-link a {
@@ -70,18 +73,13 @@ nav a img {
   font-size: 12px;
 }
 
-.hero-wrapper-links {
-  display: flex;
-  gap: 0px 30px;
-}
-
 .hero-wrapper {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 425px));
   justify-content: space-around;
   align-items: center;
-  margin-top: 50px;
-  gap: 0px 270px;
+  margin-top: 60px;
+  gap: 0px 250px;
 }
 
 .hero-wrapper-left h1 {
@@ -93,8 +91,10 @@ nav a img {
   color: var(--dark-gray);
   padding: 10px 0px 20px 0px;
 }
+
 .hero-wrapper-links {
   display: flex;
+  gap: 0px 30px;
   align-items: center;
 }
 
@@ -157,14 +157,14 @@ a {
 
 .logo-wrapper[data-type="atlassian"] {
   top: 0;
-  right: 225px;
+  right: 210px;
   height: 60px;
   width: 60px;
   padding: 12px;
 }
 
 .logo-wrapper[data-type="calendar"] {
-  bottom: 0;
+  bottom: -10px;
   right: 0;
   height: 55px;
   width: 55px;
@@ -172,8 +172,8 @@ a {
 }
 
 .logo-wrapper[data-type="google-a"] {
-  bottom: 35px;
-  right: 225px;
+  bottom: 15px;
+  right: 220px;
   height: 45px;
   width: 45px;
   padding: 7px;
@@ -181,31 +181,26 @@ a {
 
 .logo-wrapper[data-type="google"] {
   top: 0;
-  left: 40px;
+  left: 55px;
   height: 45px;
   width: 45px;
   padding: 8px;
 }
 
 .logo-wrapper[data-type="paypal"] {
-  bottom: 110px;
-  left: 20px;
+  bottom: 85px;
+  left: 40px;
   height: 60px;
   width: 60px;
   padding: 12px;
 }
 
 .logo-wrapper[data-type="weave"] {
-  bottom: 110px;
-  right: 100px;
+  bottom: 100px;
+  right: 80px;
   height: 55px;
   width: 55px;
   padding: 10px;
-}
-
-.logo-wrapper img {
-  height: 50px;
-  width: 50px;
 }
 
 .benefits-container {
@@ -214,6 +209,7 @@ a {
 
 .title-description {
   text-align: center;
+  padding: 30px 0px;
 }
 
 .title-description p {
@@ -255,17 +251,18 @@ a {
 .benefits-wrapper-2 {
   background: rgba(240, 240, 240, 0.4);
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 500px));
-  justify-content: space-evenly;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 700px));
+  justify-content: space-between;
   padding-top: 125px;
-  margin: 0 35px;
+  margin: 0 50px;
 }
 
 .benefits-wrapper-2-left {
   display: flex;
   flex-flow: column nowrap;
-  padding-left: 50px;
   padding-top: 100px;
+  position: relative;
+  inset: auto auto auto 150px;
 }
 
 .benefits-wrapper-2-left h2 {
@@ -276,10 +273,6 @@ a {
 
 .benefits-wrapper-2-left .play-video {
   width: fit-content;
-}
-
-.benefits-wrapper-2-right {
-  width: 650px;
 }
 
 .benefits-wrapper-2-right img {
@@ -435,17 +428,14 @@ a {
 
 .clients {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(225px, 250px));
+  justify-content: space-between;
+  padding-top: 50px;
 }
 
 .client {
-  height: auto;
   width: 100px;
   margin-inline: auto;
-}
-
-.client img {
-  aspect-ratio: 1 / 1;
 }
 
 .price-container {
@@ -524,18 +514,8 @@ a {
   line-height: 1.5;
 }
 
-.sketch-wrapper {
-  display: flex;
-  align-items: center;
-  gap: 0px 10px;
-}
-
-.sketch {
+.notification[data-type="sketch"] {
   background: #13df8f;
-  color: var(--white);
-  border-radius: 50px;
-  padding: 3px 7px;
-  font-size: 12px;
 }
 
 .hire-us-container {
@@ -750,6 +730,23 @@ footer {
   width: 60%;
 }
 
+.notification-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0px 10px;
+}
+
+.notification {
+  color: var(--white);
+  border-radius: 50px;
+  padding: 3px 7px;
+  font-size: 12px;
+}
+
+.notification[data-type="we-hiring"] {
+  background: var(--link);
+}
+
 .service-column h4 {
   color: var(--black);
   padding-bottom: 10px;
@@ -828,3 +825,12 @@ footer {
   line-height: 1.5;
   word-spacing: 1.5px;
 }
+
+/* 
+--section-tb-padding
+-- section-title-tb-padding
+--img-width
+--sm-logo-wrapper
+--md-logo-wrapper
+--lg-logo-wrapper
+*/
