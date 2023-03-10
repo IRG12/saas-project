@@ -14,6 +14,13 @@
   --dark-gray: rgba(101, 101, 101, 0.9);
   --white: #fff;
   --black: #000;
+  --sections-pad-tb: 20px;
+  --sm-grid-min-width: ;
+  --md-grid-min-width: ;
+  --lg-grid-min-width: ;
+  --sm-grid-max-width: ;
+  --md-grid-max-width: ;
+  --lg-grid-max-width: ;
   --sm-mtb-wrapper: 40px;
   --sm-margin-wrapper: ;
   --md-mtb-wrapper: 100px;
@@ -21,6 +28,8 @@
   --lg-mtb-wrapper: 150px;
   --lg-margin-wrapper: ;
   --sm-col-gap: 30px;
+  --md-col-gap: 60px;
+  --lg-col-gap: 120px;
 }
 
 body {
@@ -29,7 +38,19 @@ body {
 }
 
 section {
-  padding: 20px 0px;
+  padding: var(--sections-pad-tb) 0px;
+  /* width: 100%; */
+}
+
+section .title-description {
+  text-align: center;
+  margin: 30px 0px;
+}
+
+section .title-description p {
+  color: var(--dark-gray);
+  line-height: 1.5;
+  padding: 10px 0px;
 }
 
 .nav-hero-container {
@@ -211,17 +232,6 @@ a {
   margin-top: 50px;
 }
 
-.title-description {
-  text-align: center;
-  margin: 30px 0px;
-}
-
-.title-description p {
-  color: var(--dark-gray);
-  line-height: 1.5;
-  padding: 10px 0px;
-}
-
 /* .benefits-wrapper {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 250px));
@@ -262,11 +272,8 @@ a {
 } */
 
 .benefits-wrapper-2-left {
-  display: flex;
-  flex-flow: column nowrap;
-  padding-top: 100px;
-  position: relative;
-  inset: auto auto auto 150px;
+  padding-top: 75px;
+  padding-left: 75px;
 }
 
 .benefits-wrapper-2-left h2 {
@@ -288,13 +295,13 @@ a {
   padding: 100px 0px;
 } */
 
-.why-points-wrapper {
+/* .why-points-wrapper {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 350px));
   justify-content: center;
   margin-left: 110px;
   padding: 75px 0px 100px 0px;
-}
+} */
 
 .point {
   display: flex;
@@ -462,18 +469,20 @@ a {
 }
 
 .price-card {
-  width: 85%;
+  width: 75%;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
+  align-items: center;
   padding: 40px 30px 70px 30px;
   box-shadow: 0px 0px 10px 0px var(--gray);
 }
 
 .price-rate {
   border-bottom: 2px solid var(--dark-gray);
-  width: 80%;
+  width: 90%;
   padding: 30px 0px;
+  text-align: left;
 }
 
 .price {
@@ -490,6 +499,11 @@ a {
   color: var(--dark-gray);
   font-weight: var(--weight-5);
   line-height: 1.5;
+  width: 90%;
+}
+
+.video-link {
+  width: 90%;
 }
 
 .video-link .play-video {
@@ -503,11 +517,10 @@ a {
   font-weight: var(--weight-5);
 }
 
-.perks-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 35px;
-}
+/* .perks-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 250px));
+} */
 
 .perk img {
   height: 50px;
@@ -837,7 +850,7 @@ footer {
 }
 
 /* 
---section-tb-padding
+
 --section-title-tb-padding
 all children of each section have the same margin top and bottom
 --img-width
@@ -849,12 +862,13 @@ all children of each section have the same margin top and bottom
 --lg-logo-wrapper
 --box-shadow
 --lg-margin-top-section
-
+  grid-min: 150, 225x2, 325x2, 400x6;
+  grid-max: 200, 250x2, 350x2, 425x3, 500x2, 700;
 */
 
 .hero-wrapper {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 425px));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 425px));
   justify-content: space-around;
   align-items: center;
   margin-top: 60px;
@@ -863,7 +877,7 @@ all children of each section have the same margin top and bottom
 
 .benefits-wrapper {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 250px));
+  grid-template-columns: repeat(auto-fit, minmax(225px, 250px));
   justify-content: space-evenly;
   margin: var(--md-mtb-wrapper) 0px;
 }
@@ -871,15 +885,18 @@ all children of each section have the same margin top and bottom
 .benefits-wrapper-2 {
   background: rgba(240, 240, 240, 0.4);
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 700px));
-  justify-content: space-between;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
   margin: var(--md-margin-wrapper);
+  padding-top: 150px;
+  gap: var(--lg-col-gap);
 }
 
 .why-points-wrapper {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 350px));
+  grid-template-columns: repeat(auto-fit, minmax(325px, 350px));
   justify-content: center;
+  margin-left: 110px;
 }
 
 .templates-ei-wrapper {
@@ -889,18 +906,24 @@ all children of each section have the same margin top and bottom
 
 .testimonial-wrapper {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 450px));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 425px));
   justify-content: center;
   align-content: center;
   margin: var(--lg-mtb-wrapper) 0px;
+  gap: 0px var(--sm-col-gap);
 }
 
 .sales-wrapper {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 500px));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 500px));
   justify-content: center;
   margin: var(--md-mtb-wrapper) 0px;
   gap: 0px var(--sm-col-gap);
+}
+
+.perks-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(225px, 250px));
 }
 
 .clients {
@@ -912,7 +935,7 @@ all children of each section have the same margin top and bottom
 
 .hire-us-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 500px));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 500px));
   justify-content: center;
   align-items: center;
   background: #002d62;
@@ -928,7 +951,7 @@ all children of each section have the same margin top and bottom
 
 .footer-bottom-top {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 400px));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 425px));
   justify-content: space-between;
   margin: var(--sm-mtb-wrapper) 0px;
 }
