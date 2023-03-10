@@ -14,6 +14,13 @@
   --dark-gray: rgba(101, 101, 101, 0.9);
   --white: #fff;
   --black: #000;
+  --sm-mtb-wrapper: 40px;
+  --sm-margin-wrapper: ;
+  --md-mtb-wrapper: 100px;
+  --md-margin-wrapper: 50px;
+  --lg-mtb-wrapper: 150px;
+  --lg-margin-wrapper: ;
+  --sm-col-gap: 30px;
 }
 
 body {
@@ -427,9 +434,9 @@ a {
   padding: 50px 0px;
 }
 
-.top-clients-wrapper .title-description {
+/* .top-clients-wrapper .title-description {
   margin: 0;
-}
+} */
 
 /* .clients {
   display: grid;
@@ -834,16 +841,15 @@ footer {
 --section-title-tb-padding
 all children of each section have the same margin top and bottom
 --img-width
---margin-tb-small
---margin-tb-md
+--sm-margin-tb
+--md-margin-tb
+--lg-margin-tb
 --sm-logo-wrapper
 --md-logo-wrapper
 --lg-logo-wrapper
 --box-shadow
 --lg-margin-top-section
---sm-mtb-wrapper
---md-mtb-wrapper
---lg-mtb-wrapper
+
 */
 
 .hero-wrapper {
@@ -859,9 +865,7 @@ all children of each section have the same margin top and bottom
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 250px));
   justify-content: space-evenly;
-  /* padding-top: 100px; */
-  margin: 100px 100px;
-  /* padding-bottom: 100px; */
+  margin: var(--md-mtb-wrapper) 0px;
 }
 
 .benefits-wrapper-2 {
@@ -869,23 +873,17 @@ all children of each section have the same margin top and bottom
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 700px));
   justify-content: space-between;
-  margin: 50px 50px;
-  /* padding-top: 125px;
-  margin: 0 50px; */
+  margin: var(--md-margin-wrapper);
 }
 
 .why-points-wrapper {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 350px));
   justify-content: center;
-  margin-left: 110px;
-  /* margin: 20px 0px; */
-  /* padding: 75px 0px 100px 0px; */
 }
 
 .templates-ei-wrapper {
-  /* margin: 0 50px; */
-  margin: 50px 50px;
+  margin: var(--md-margin-wrapper);
   object-fit: cover;
 }
 
@@ -894,25 +892,22 @@ all children of each section have the same margin top and bottom
   grid-template-columns: repeat(auto-fit, minmax(400px, 450px));
   justify-content: center;
   align-content: center;
-  margin: 150px 100px;
-  /* margin-top: 100px;
-  margin-bottom: 150px; */
+  margin: var(--lg-mtb-wrapper) 0px;
 }
 
 .sales-wrapper {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 500px));
   justify-content: center;
-  /* margin-top: 75px; */
-  margin: 100px 100px;
-  gap: 0px 30px;
+  margin: var(--md-mtb-wrapper) 0px;
+  gap: 0px var(--sm-col-gap);
 }
 
 .clients {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(225px, 250px));
   justify-content: space-between;
-  padding-top: 30px;
+  margin: var(--sm-mtb-wrapper) 0px;
 }
 
 .hire-us-container {
@@ -921,14 +916,13 @@ all children of each section have the same margin top and bottom
   justify-content: center;
   align-items: center;
   background: #002d62;
-  /* margin: 50px 0px; */
-  gap: 0px 30px;
+  gap: 0px var(--sm-col-gap);
 }
 
 .footer-top-right {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 200px));
-  justify-content: center;
+  justify-content: flex-end;
   width: 60%;
 }
 
@@ -936,6 +930,5 @@ all children of each section have the same margin top and bottom
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 400px));
   justify-content: space-between;
-  width: 100%;
-  margin: 50px 0px;
+  margin: var(--sm-mtb-wrapper) 0px;
 }
