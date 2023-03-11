@@ -15,21 +15,19 @@
   --white: #fff;
   --black: #000;
   --sections-pad-tb: 20px;
-  --sm-grid-min-width: ;
-  --md-grid-min-width: ;
-  --lg-grid-min-width: ;
-  --sm-grid-max-width: ;
-  --md-grid-max-width: ;
-  --lg-grid-max-width: ;
   --sm-mtb-wrapper: 40px;
-  --sm-margin-wrapper: ;
   --md-mtb-wrapper: 100px;
   --md-margin-wrapper: 50px;
   --lg-mtb-wrapper: 150px;
-  --lg-margin-wrapper: ;
   --sm-col-gap: 30px;
   --md-col-gap: 60px;
   --lg-col-gap: 120px;
+  --sm-grid-min: 150px;
+  --md-grid-min: 225px;
+  --lg-grid-min: 400px;
+  --sm-grid-max: 200px;
+  --md-grid-max: 250px;
+  --lg-grid-max: 500px;
 }
 
 body {
@@ -67,7 +65,7 @@ nav {
   display: flex;
   justify-content: space-around;
   padding-top: 20px;
-  gap: 0px 670px;
+  gap: 0px 600px;
 }
 
 nav a img {
@@ -78,7 +76,7 @@ nav a img {
 .nav-items {
   display: flex;
   align-items: center;
-  gap: 0px 20px;
+  gap: 0px 45px;
   font-weight: var(--weight-6);
   font-size: 14px;
   padding-left: 50px;
@@ -98,14 +96,17 @@ nav a img {
   font-size: 12px;
 }
 
-/* .hero-wrapper {
+.hero-wrapper {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 425px));
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(var(--lg-grid-min), var(--lg-grid-max))
+  );
   justify-content: space-around;
   align-items: center;
   margin-top: 60px;
-  gap: 0px 250px;
-} */
+  gap: 0px var(--lg-col-gap);
+}
 
 .hero-wrapper-left h1 {
   font-size: 40px;
@@ -181,8 +182,8 @@ a {
 }
 
 .logo-wrapper[data-type="atlassian"] {
-  top: 0;
-  right: 210px;
+  top: 20px;
+  right: 190px;
   height: 60px;
   width: 60px;
   padding: 12px;
@@ -206,7 +207,7 @@ a {
 
 .logo-wrapper[data-type="google"] {
   top: 0;
-  left: 55px;
+  left: 100px;
   height: 45px;
   width: 45px;
   padding: 8px;
@@ -214,7 +215,7 @@ a {
 
 .logo-wrapper[data-type="paypal"] {
   bottom: 85px;
-  left: 40px;
+  left: 90px;
   height: 60px;
   width: 60px;
   padding: 12px;
@@ -232,14 +233,15 @@ a {
   margin-top: 50px;
 }
 
-/* .benefits-wrapper {
+.benefits-wrapper {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 250px));
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(var(--md-grid-min), var(--md-grid-max))
+  );
   justify-content: space-evenly;
-  padding-top: 100px;
-  margin: 0 30px;
-  padding-bottom: 100px;
-} */
+  margin: var(--md-mtb-wrapper) 0px;
+}
 
 .benefit-card {
   padding: 10px 20px;
@@ -262,14 +264,14 @@ a {
   line-height: 1.5;
 }
 
-/* .benefits-wrapper-2 {
+.benefits-wrapper-2 {
   background: rgba(240, 240, 240, 0.4);
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 700px));
-  justify-content: space-between;
-  padding-top: 125px;
-  margin: 0 50px;
-} */
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  margin: var(--md-margin-wrapper);
+  padding-top: 150px;
+}
 
 .benefits-wrapper-2-left {
   padding-top: 75px;
@@ -291,17 +293,12 @@ a {
   object-fit: cover;
 }
 
-/* .why-container {
-  padding: 100px 0px;
-} */
-
-/* .why-points-wrapper {
+.why-points-wrapper {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 350px));
+  grid-template-columns: repeat(auto-fit, minmax(325px, 350px));
   justify-content: center;
   margin-left: 110px;
-  padding: 75px 0px 100px 0px;
-} */
+}
 
 .point {
   display: flex;
@@ -360,19 +357,21 @@ a {
   padding-left: 40px;
 }
 
-/* .templates-ei-wrapper {
-  margin: 0 50px;
+.templates-ei-wrapper {
+  margin: var(--md-margin-wrapper);
   object-fit: cover;
-} */
+}
 
-/* .testimonial-wrapper {
+.testimonial-wrapper {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 450px));
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(var(--lg-grid-min), var(--lg-grid-max))
+  );
   justify-content: center;
   align-content: center;
-  margin-top: 100px;
-  margin-bottom: 150px;
-} */
+  margin: var(--lg-mtb-wrapper) 0px;
+}
 
 .testimonial-img {
   height: 400px;
@@ -441,31 +440,29 @@ a {
   padding: 50px 0px;
 }
 
-/* .top-clients-wrapper .title-description {
-  margin: 0;
-} */
-
-/* .clients {
+.clients {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(225px, 250px));
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(var(--md-grid-min), var(--md-grid-max))
+  );
   justify-content: space-between;
-} */
+  margin: var(--sm-mtb-wrapper) 0px;
+}
 
 .client {
   width: 100px;
   margin-inline: auto;
 }
 
-/* .price-container {
-  margin-bottom: 100px;
-} */
-
 .sales-wrapper {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 500px));
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(var(--lg-grid-min), var(--lg-grid-max))
+  );
   justify-content: center;
-  margin-top: 75px;
-  gap: 0px 30px;
+  margin: var(--md-mtb-wrapper) 0px;
 }
 
 .price-card {
@@ -517,10 +514,13 @@ a {
   font-weight: var(--weight-5);
 }
 
-/* .perks-wrapper {
+.perks-wrapper {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 250px));
-} */
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(var(--md-grid-min), var(--md-grid-max))
+  );
+}
 
 .perk img {
   height: 50px;
@@ -542,14 +542,16 @@ a {
   background: #13df8f;
 }
 
-/* .hire-us-container {
+.hire-us-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 500px));
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(var(--lg-grid-min), var(--lg-grid-max))
+  );
   justify-content: center;
   align-items: center;
   background: #002d62;
-  gap: 0px 30px;
-} */
+}
 
 .hire-us-wrapper {
   color: var(--white);
@@ -783,13 +785,15 @@ footer {
   word-spacing: 1.5px;
 }
 
-/* .footer-bottom-top {
+.footer-top-right {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 400px));
-  justify-content: space-between;
-  width: 100%;
-  padding: 30px 0px;
-} */
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(var(--sm-grid-min), var(--sm-grid-max))
+  );
+  justify-content: flex-end;
+  width: 60%;
+}
 
 .privacy-terms-site-wrapper {
   display: flex;
@@ -829,6 +833,16 @@ footer {
   outline: none;
 }
 
+.footer-bottom-top {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(var(--lg-grid-min), var(--lg-grid-max))
+  );
+  justify-content: space-between;
+  margin: var(--sm-mtb-wrapper) 0px;
+}
+
 .footer-bottom-bottom {
   text-align: center;
   padding-bottom: 20px;
@@ -861,97 +875,4 @@ all children of each section have the same margin top and bottom
 --md-logo-wrapper
 --lg-logo-wrapper
 --box-shadow
---lg-margin-top-section
-  grid-min: 150, 225x2, 325x2, 400x6;
-  grid-max: 200, 250x2, 350x2, 425x3, 500x2, 700;
 */
-
-.hero-wrapper {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 425px));
-  justify-content: space-around;
-  align-items: center;
-  margin-top: 60px;
-  gap: 0px 250px;
-}
-
-.benefits-wrapper {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(225px, 250px));
-  justify-content: space-evenly;
-  margin: var(--md-mtb-wrapper) 0px;
-}
-
-.benefits-wrapper-2 {
-  background: rgba(240, 240, 240, 0.4);
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  justify-content: center;
-  margin: var(--md-margin-wrapper);
-  padding-top: 150px;
-  gap: var(--lg-col-gap);
-}
-
-.why-points-wrapper {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(325px, 350px));
-  justify-content: center;
-  margin-left: 110px;
-}
-
-.templates-ei-wrapper {
-  margin: var(--md-margin-wrapper);
-  object-fit: cover;
-}
-
-.testimonial-wrapper {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 425px));
-  justify-content: center;
-  align-content: center;
-  margin: var(--lg-mtb-wrapper) 0px;
-  gap: 0px var(--sm-col-gap);
-}
-
-.sales-wrapper {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 500px));
-  justify-content: center;
-  margin: var(--md-mtb-wrapper) 0px;
-  gap: 0px var(--sm-col-gap);
-}
-
-.perks-wrapper {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(225px, 250px));
-}
-
-.clients {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(225px, 250px));
-  justify-content: space-between;
-  margin: var(--sm-mtb-wrapper) 0px;
-}
-
-.hire-us-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 500px));
-  justify-content: center;
-  align-items: center;
-  background: #002d62;
-  gap: 0px var(--sm-col-gap);
-}
-
-.footer-top-right {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 200px));
-  justify-content: flex-end;
-  width: 60%;
-}
-
-.footer-bottom-top {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 425px));
-  justify-content: space-between;
-  margin: var(--sm-mtb-wrapper) 0px;
-}
