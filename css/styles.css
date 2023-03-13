@@ -98,6 +98,16 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding-top: 20px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 100;
+  transition: ease-in-out 0.3s;
+}
+
+[aria-controls="navbarDropdown"] {
+  display: none;
 }
 
 .nav-logo {
@@ -152,8 +162,8 @@ nav {
   );
   justify-content: space-around;
   align-items: center;
-  margin-top: 60px;
   gap: 0px var(--lg-col-gap);
+  padding-top: 130px;
 }
 
 .hero-wrapper-left h1 {
