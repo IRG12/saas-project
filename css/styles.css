@@ -33,6 +33,9 @@
   --container-width: 100%;
   --img-width: 100%;
   --img-height: 100%;
+  --sm-logo: 45px;
+  --md-logo: 55px;
+  --lg-logo: 60px;
   /* fs: font-size */
   --xs-fs: 10px;
   --sm-fs: 12px;
@@ -40,6 +43,9 @@
   --xl-fs: 50px;
   /* paragraph line-height */
   --p-lh-norm: 1.5;
+  /* r: radius */
+  --lg-border-r: 50px;
+  --sm-border-r: 5px;
 }
 
 body {
@@ -74,23 +80,34 @@ svg {
 
 nav {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: center;
   padding-top: 20px;
-  gap: 0px 600px;
 }
 
-nav a img {
+.nav-logo {
+  flex: 1;
+}
+
+.nav-logo img {
   height: 50px;
   width: 150px;
+  max-width: max-content;
 }
 
 .nav-items {
   display: flex;
   align-items: center;
+  justify-content: flex-end;
   gap: 0px 45px;
   font-weight: var(--weight-6);
   font-size: var(--sm2-fs);
   padding-left: 50px;
+  flex: 2;
+}
+
+.nav-link {
+  width: max-content;
 }
 
 .nav-link a {
@@ -98,11 +115,15 @@ nav a img {
   color: var(--gray);
 }
 
+.link {
+  margin-right: 30px;
+}
+
 .link .blue-border {
   background: var(--link);
   color: var(--white);
   padding: 12px 20px;
-  border-radius: 50px;
+  border-radius: var(--lg-border-r);
   margin: 0px 15px;
   font-size: var(--sm-fs);
 }
@@ -155,7 +176,7 @@ a {
   gap: 0px 10px;
   background: var(--link);
   padding: 12px 20px;
-  border-radius: 50px;
+  border-radius: var(--lg-border-r);
 }
 
 .learn-more a {
@@ -172,7 +193,7 @@ a {
 .logo-wrapper {
   position: absolute;
   background: var(--white);
-  border-radius: 50%;
+  border-radius: var(--lg-border-r);
   box-shadow: var(--box-shadow-norm);
   display: flex;
   justify-content: center;
@@ -187,56 +208,56 @@ a {
 .logo-wrapper[data-type="asana"] {
   top: 0;
   right: 0;
-  height: 60px;
-  width: 60px;
+  height: var(--lg-logo);
+  width: var(--lg-logo);
   padding: 12px;
 }
 
 .logo-wrapper[data-type="atlassian"] {
   top: 20px;
   right: 190px;
-  height: 60px;
-  width: 60px;
+  height: var(--lg-logo);
+  width: var(--lg-logo);
   padding: 12px;
 }
 
 .logo-wrapper[data-type="calendar"] {
   bottom: -10px;
   right: 0;
-  height: 55px;
-  width: 55px;
+  height: var(--md-logo);
+  width: var(--md-logo);
   padding: 12px;
 }
 
 .logo-wrapper[data-type="google-a"] {
   bottom: 15px;
   right: 220px;
-  height: 45px;
-  width: 45px;
+  height: var(--sm-logo);
+  width: var(--sm-logo);
   padding: 7px;
 }
 
 .logo-wrapper[data-type="google"] {
   top: 0;
   left: 100px;
-  height: 45px;
-  width: 45px;
+  height: var(--sm-logo);
+  width: var(--sm-logo);
   padding: 8px;
 }
 
 .logo-wrapper[data-type="paypal"] {
   bottom: 85px;
   left: 90px;
-  height: 60px;
-  width: 60px;
+  height: var(--lg-logo);
+  width: var(--lg-logo);
   padding: 12px;
 }
 
 .logo-wrapper[data-type="weave"] {
   bottom: 100px;
   right: 80px;
-  height: 55px;
-  width: 55px;
+  height: var(--md-logo);
+  width: var(--md-logo);
   padding: 10px;
 }
 
@@ -329,7 +350,7 @@ a {
 
 .point-icon {
   background: var(--blue-bg);
-  border-radius: 50px;
+  border-radius: var(--lg-border-r);
   width: 50px;
   height: 50px;
   display: flex;
@@ -620,19 +641,15 @@ a {
   width: 40px;
 }
 
-.woman img {
-  aspect-ratio: 1/1;
-  border-radius: 50px;
-}
-
 .man {
   height: auto;
   width: 60px;
 }
 
+.woman img,
 .man img {
   aspect-ratio: 1/1;
-  border-radius: 50px;
+  border-radius: var(--lg-border-r);
 }
 
 .form-wrapper {
@@ -666,7 +683,7 @@ textarea,
 .input-border {
   border: 2px solid var(--light-gray);
   padding: 10px;
-  border-radius: 5px;
+  border-radius: var(--sm-border-r);
 }
 
 .user-input-wrapper {
@@ -775,7 +792,7 @@ footer {
 
 .notification {
   color: var(--white);
-  border-radius: 50px;
+  border-radius: var(--lg-border-r);
   padding: 3px 7px;
   font-size: var(--sm-fs);
 }
@@ -794,7 +811,6 @@ footer {
   padding: 4px 0px;
   font-size: var(--sm2-fs);
   font-weight: var(--weight-5);
-  /* word-spacing: 1.5px; */
 }
 
 .footer-top-right {
@@ -832,7 +848,7 @@ footer {
   align-items: center;
   background: var(--blue-bg);
   padding: 8px 10px;
-  border-radius: 5px;
+  border-radius: var(--sm-border-r);
 }
 
 .social-icon i {
@@ -872,10 +888,4 @@ footer {
 
 .disclaimer {
   line-height: var(--p-lh-norm);
-  /* word-spacing: 1.5px; */
 }
-
-/* 
-
---box-shadow
-*/
