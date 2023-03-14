@@ -98,19 +98,19 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 20px;
+  padding: 20px 0px;
   position: fixed;
   top: 0;
   right: 0;
   left: 0;
   z-index: 100;
   transition: ease-in-out 0.3s;
-  background: var(--blue-bg);
-  box-shadow: var(--box-shadow-norm);
 }
 
-/* nav .sticky {
-} */
+.navbar.sticky {
+  background: var(--white);
+  box-shadow: var(--box-shadow-norm);
+}
 
 /* 'pointer-events: none' allows you to click through the icon to the button so it will toggle */
 .navbar-toggler {
@@ -188,7 +188,7 @@ nav {
   justify-content: space-around;
   align-items: center;
   gap: 0px var(--lg-col-gap);
-  padding-top: 130px;
+  padding-top: 180px;
 }
 
 .hero-wrapper-left h1 {

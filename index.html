@@ -34,7 +34,7 @@
         <use href="#rec-left" fill="url('#myGradient')" />
         <use href="#rec-right" fill="url('#myGradient2')" />
       </svg>
-      <nav>
+      <nav id="topNav" class="navbar">
         <button
           class="navbar-toggler"
           aria-expanded="false"
@@ -758,6 +758,15 @@ Tell us more about your projects, needs, and timeline please... </textarea
 
   <!-- script >>> 'Toggles'. Click on the surroundings of the icon to toggle; not directly on the hamburger icon -->
   <script>
+    const nav = document.getElementById("topNav");
+    window.onscroll = function () {
+      if (window.pageYOffset > 100) {
+        nav.classList.add("sticky");
+      } else {
+        nav.classList.remove("sticky")
+      }
+    }
+
     const navButton = document.querySelector('button[aria-expanded]');
 
     const toggleNav = ({target}) => {
