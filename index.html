@@ -35,8 +35,15 @@
         <use href="#rec-right" fill="url('#myGradient2')" />
       </svg>
       <nav>
+        <button
+          class="navbar-toggler"
+          aria-expanded="false"
+          aria-controls="navbarDropdown"
+        >
+          <span> &#9776 </span>
+        </button>
         <div class="nav-logo">
-          <a href="">
+          <a class="navbar-brand" href="">
             <img
               loading="lazy"
               src="./saas-project-assets/project_logo/logo.svg"
@@ -54,13 +61,6 @@
             <a class="blue-border" href="">Buy Now</a>
           </li>
         </ul>
-        <button
-          class="navbar-toggler"
-          aria-expanded="false"
-          aria-controls="navbarDropdown"
-        >
-          <span> &#9776 </span>
-        </button>
       </nav>
       <div class="hero-wrapper">
         <div class="hero-wrapper-left">
@@ -755,4 +755,16 @@ Tell us more about your projects, needs, and timeline please... </textarea
     src="https://kit.fontawesome.com/83edd3b365.js"
     crossorigin="anonymous"
   ></script>
+
+  <!-- script >>> 'Toggles'. Click on the surroundings of the icon to toggle; not directly on the hamburger icon -->
+  <script>
+    const navButton = document.querySelector('button[aria-expanded]');
+
+    const toggleNav = ({target}) => {
+      const expanded = target.getAttribute('aria-expanded') === 'true' || false;
+      navButton.setAttribute('aria-expanded', !expanded);
+    }
+
+    navButton.addEventListener('click', toggleNav);
+  </script>
 </html>

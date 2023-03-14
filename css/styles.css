@@ -55,6 +55,7 @@
   --xs-fs: 10px;
   --sm-fs: 12px;
   --sm2-fs: 14px;
+  --md-fs: 30px;
   --xl-fs: 50px;
   /* paragraph line-height */
   --p-lh-norm: 1.5;
@@ -104,6 +105,30 @@ nav {
   left: 0;
   z-index: 100;
   transition: ease-in-out 0.3s;
+  background: var(--blue-bg);
+  box-shadow: var(--box-shadow-norm);
+}
+
+/* nav .sticky {
+} */
+
+/* 'pointer-events: none' allows you to click through the icon to the button so it will toggle */
+.navbar-toggler {
+  position: absolute;
+  top: 15px;
+  right: 30px;
+  outline: none;
+  padding: 10px 20px;
+  background-color: transparent;
+  border: 1px solid transparent;
+  cursor: pointer;
+  pointer-events: none;
+}
+
+.navbar-toggler span {
+  color: var(--link);
+  font-size: var(--md-fs);
+  cursor: pointer;
 }
 
 [aria-controls="navbarDropdown"] {
@@ -337,7 +362,7 @@ a {
 }
 
 .benefits-wrapper-2-left h2 {
-  font-size: 30px;
+  font-size: var(--md-fs);
   font-weight: var(--weight-5);
   padding-bottom: 30px;
 }

@@ -1,1 +1,16 @@
 /* media queries */
+
+/* Ipads and Tablets - Portrait */
+@media screen and (max-width: 835px) {
+  [aria-controls="navbarDropdown"] {
+    display: block;
+  }
+
+  [aria-expanded="false"] ~ ul {
+    display: none;
+  }
+
+  [aria-expanded="true"] ~ ul {
+    display: block;
+  }
+}
