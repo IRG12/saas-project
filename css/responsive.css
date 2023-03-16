@@ -2,7 +2,7 @@
 /* media queries are cascading (definition 2: arrange (a number of devices or objects) in a series or sequence). Largest to smallest width. Top to bottom*/
 
 /* Ipads and Tablets - Portrait */
-@media screen and (max-width: 835px) {
+@media screen and (768px <= width <= 1023px) {
   [aria-controls="navbarDropdown"] {
     display: block;
   }
@@ -12,6 +12,49 @@
   }
 
   [aria-expanded="true"] ~ ul {
+    display: flex;
+    position: relative;
+    right: 13%;
+    background: var(--white);
+    box-shadow: var(--box-shadow-norm);
+    padding: 10px 0px 50px 0px;
+    border-radius: 10px;
+  }
+
+  [aria-expanded="true"] ~ ul li.nav-link.link {
+    margin: 0;
+  }
+
+  [aria-expanded="true"] ~ ul .link {
+    position: relative;
+    top: 40px;
+    right: 42%;
+  }
+
+  [aria-expanded="true"] ~ ul > li:nth-of-type(-n + 5) {
+    position: relative;
+    left: 10%;
+  }
+
+  [aria-expanded="true"] ~ ul .block a {
     display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  [aria-expanded="true"] ~ ul .block .hire-us {
+    display: block;
+    width: 50px;
+  }
+
+  .hero-wrapper,
+  .hero-wrapper-left {
+    text-align: center;
+    gap: var(--md-col-gap) 0px;
+  }
+
+  .hero-wrapper-left .external-wrapper-links {
+    display: flex;
+    justify-content: center;
   }
 }

@@ -57,6 +57,7 @@
   --sm-fs: 12px;
   --sm2-fs: 14px;
   --md-fs: 30px;
+  --md2-fs: 40px;
   --xl-fs: 50px;
   /* paragraph line-height */
   --p-lh-norm: 1.5;
@@ -85,11 +86,6 @@ section .title-description p {
   padding: 10px 0px;
 }
 
-/* .nav-hero-container {
-  position: relative;
-  padding-top: 0;
-} */
-
 .hero-bg-wrapper {
   position: relative;
   padding-top: 0;
@@ -97,7 +93,6 @@ section .title-description p {
 
 .hero-bg-left {
   background: rgba(240, 240, 240, 0.7);
-  /* clip-path: polygon(0 0, 90% 0, 75% calc(75% - 3vw), 0 100%); */
   clip-path: polygon(0 0, 90% 0, 75% 65%, 0 90%);
   height: var(--fixed-size-600);
   width: var(--container-width);
@@ -106,17 +101,11 @@ section .title-description p {
 }
 .hero-bg-right {
   background: rgba(206, 218, 236, 0.7);
-  /* clip-path: polygon(10% 0, 0 0, 65% calc(65% - 3vw), 0 65%); */
   clip-path: polygon(100% 0, 90% 0, 75% 65%, 100% 55%);
   height: var(--fixed-size-600);
   width: var(--container-width);
   position: absolute;
 }
-
-/* svg {
-  position: absolute;
-  z-index: -1;
-} */
 
 nav {
   display: flex;
@@ -142,16 +131,16 @@ nav {
   top: 15px;
   right: 30px;
   outline: none;
-  padding: 10px 20px;
+  padding: 20px;
   background-color: transparent;
   border: 1px solid transparent;
   cursor: pointer;
-  pointer-events: none;
+  /* pointer-events: none; */
 }
 
 .navbar-toggler span {
   color: var(--link);
-  font-size: var(--md-fs);
+  font-size: var(--md2-fs);
   cursor: pointer;
 }
 
@@ -177,7 +166,6 @@ nav {
   gap: 0px 45px;
   font-weight: var(--weight-6);
   font-size: var(--sm2-fs);
-  padding-left: 50px;
   flex: 2;
 }
 
@@ -212,7 +200,7 @@ nav {
   justify-content: space-around;
   align-items: center;
   gap: 0px var(--lg-col-gap);
-  padding-top: 180px;
+  padding-top: 140px;
 }
 
 .hero-wrapper-left h1 {
@@ -225,7 +213,7 @@ nav {
   padding: 10px 0px 20px 0px;
 }
 
-.hero-wrapper-links {
+.internal-wrapper-links {
   display: flex;
   gap: 0px var(--sm-col-gap);
   align-items: center;
@@ -306,7 +294,7 @@ a {
 
 .logo-wrapper[data-type="google-a"] {
   bottom: 15px;
-  right: 220px;
+  right: 260px;
   height: var(--sm-logo);
   width: var(--sm-logo);
   padding: 7px;
@@ -314,7 +302,7 @@ a {
 
 .logo-wrapper[data-type="google"] {
   top: 0;
-  left: 100px;
+  left: 80px;
   height: var(--sm-logo);
   width: var(--sm-logo);
   padding: 8px;
@@ -322,7 +310,7 @@ a {
 
 .logo-wrapper[data-type="paypal"] {
   bottom: 85px;
-  left: 90px;
+  left: 70px;
   height: var(--lg-logo);
   width: var(--lg-logo);
   padding: 12px;
