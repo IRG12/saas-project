@@ -1,8 +1,13 @@
 /* media queries */
 /* media queries are cascading (definition 2: arrange (a number of devices or objects) in a series or sequence). Largest to smallest width. Top to bottom*/
 
+@media screen and (max-width: 1025px) {
+  #block-hr {
+    display: none;
+  }
+}
 /* Ipads and Tablets - Portrait */
-@media screen and (768px <= width <= 1023px) {
+@media screen and (360px <= width <= 1023px) {
   [aria-controls="navbarDropdown"] {
     display: block;
   }
@@ -50,11 +55,84 @@
   .hero-wrapper,
   .hero-wrapper-left {
     text-align: center;
-    gap: var(--md-col-gap) 0px;
+    gap: var(--md-row-gap) 0px;
   }
 
   .hero-wrapper-left .external-wrapper-links {
     display: flex;
     justify-content: center;
   }
+
+  .logo-wrapper[data-type="asana"] {
+    top: 0;
+    right: 0;
+    height: var(--lg-logo);
+    width: var(--lg-logo);
+    padding: 12px;
+  }
+
+  .logo-wrapper[data-type="atlassian"] {
+    top: 20px;
+    right: 240px;
+    height: var(--lg-logo);
+    width: var(--lg-logo);
+    padding: 12px;
+  }
+
+  .logo-wrapper[data-type="calendar"] {
+    bottom: -10px;
+    right: 0;
+    height: var(--md-logo);
+    width: var(--md-logo);
+    padding: 12px;
+  }
+
+  .logo-wrapper[data-type="google-a"] {
+    bottom: 45px;
+    right: 260px;
+    height: var(--sm-logo);
+    width: var(--sm-logo);
+    padding: 7px;
+  }
+
+  .logo-wrapper[data-type="google"] {
+    top: 0;
+    left: 0;
+    height: var(--sm-logo);
+    width: var(--sm-logo);
+    padding: 8px;
+  }
+
+  .logo-wrapper[data-type="paypal"] {
+    bottom: 120px;
+    left: 20px;
+    height: var(--lg-logo);
+    width: var(--lg-logo);
+    padding: 12px;
+  }
+
+  .logo-wrapper[data-type="weave"] {
+    bottom: 100px;
+    right: 80px;
+    height: var(--md-logo);
+    width: var(--md-logo);
+    padding: 10px;
+  }
+
+  .testimonial-img {
+    left: 70px;
+  }
+
+  .testimonial-content {
+    text-align: center;
+  }
+
+  .company {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+}
+
+@media screen and (360px <= width <= 768px) {
 }

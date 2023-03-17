@@ -31,6 +31,12 @@
   --sm-col-gap: 30px;
   --md-col-gap: 60px;
   --lg-col-gap: 120px;
+  --sm-row-gap: 30px;
+  --md-row-gap: 60px;
+  --lg-row-gap: 120px;
+  --sm-gap: 30px;
+  --md-gap: 60px;
+  --lg-gap: 120px;
 
   --sm-grid-min: 150px;
   --md-grid-min: 225px;
@@ -199,7 +205,7 @@ nav {
   );
   justify-content: space-around;
   align-items: center;
-  gap: 0px var(--lg-col-gap);
+  gap: var(--md-) var(--lg-col-gap);
   padding-top: 140px;
 }
 
@@ -336,6 +342,7 @@ a {
   );
   justify-content: space-evenly;
   margin: var(--md-mtb-wrapper) 0px;
+  gap: var(--sm-gap);
 }
 
 .benefit-card {
@@ -541,10 +548,7 @@ a {
 
 .clients {
   display: grid;
-  grid-template-columns: repeat(
-    auto-fit,
-    minmax(var(--md-grid-min), var(--md-grid-max))
-  );
+  grid-template-columns: repeat(auto-fit, minmax(100px, 125px));
   justify-content: space-between;
   margin: var(--sm-mtb-wrapper) 0px;
 }
