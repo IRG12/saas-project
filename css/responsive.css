@@ -7,7 +7,7 @@
   }
 }
 /* Ipads and Tablets - Portrait */
-@media screen and (360px <= width <= 1023px) {
+@media screen and (768px <= width <= 1023px) {
   [aria-controls="navbarDropdown"] {
     display: block;
   }
@@ -119,6 +119,10 @@
     padding: 10px;
   }
 
+  .testimonial-wrapper {
+    gap: var(--md-row-gap) 0px;
+  }
+
   .testimonial-img {
     left: 70px;
   }
@@ -132,6 +136,52 @@
     justify-content: center;
     width: 100%;
   }
+
+  .sales-wrapper {
+    gap: var(--md-row-gap) 0px;
+  }
+
+  .perks-wrapper {
+    gap: 50px 100px;
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(var(--sm-grid-min), var(--sm-grid-max))
+    );
+  }
+
+  .responsive-wrapper {
+    display: flex;
+    gap: 0px var(--md-col-gap);
+    padding-bottom: 30px;
+  }
+
+  .responsive-wrapper-left .pitch {
+    width: 60%;
+  }
+
+  .responsive-wrapper-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (520px <= width <= 1013px) {
+  .price-card {
+    width: auto;
+  }
+
+  .price-rate,
+  .guaranteed-terms {
+    text-align: center;
+  }
+
+  .video-link {
+    text-align: -webkit-center;
+  }
+}
+@media screen and (360px <= width <= 768px) {
 }
 
 @media screen and (360px <= width <= 768px) {

@@ -830,7 +830,7 @@ footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 0px 100px;
+  gap: 0px 50px;
   padding: 60px 0px 30px 0px;
 }
 
@@ -925,10 +925,11 @@ footer {
   display: grid;
   grid-template-columns: repeat(
     auto-fit,
-    minmax(var(--lg-grid-min), var(--lg-grid-max))
+    minmax(var(--md-grid-min), var(--md-grid-max))
   );
   justify-content: space-between;
-  margin: var(--sm-mtb-wrapper) 0px;
+  align-items: center;
+  margin: 40px 0px 20px 0px;
 }
 
 .footer-bottom-bottom {
