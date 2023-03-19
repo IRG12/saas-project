@@ -883,14 +883,18 @@ footer {
   width: 60%;
 }
 
-.privacy-terms-site-wrapper {
+.external-privacy-terms-site-wrapper {
+  width: max-content;
+}
+
+.internal-privacy-terms-site-wrapper {
   display: flex;
   align-items: center;
   font-size: var(--sm2-fs);
   font-weight: var(--weight-5);
 }
 
-.privacy-terms-site-wrapper i {
+.internal-privacy-terms-site-wrapper i {
   padding: 0px 7px;
   font-size: var(--xs-fs);
 }
