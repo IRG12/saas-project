@@ -6,8 +6,52 @@
     display: none;
   }
 }
+
+@media screen and (max-width: 716px) {
+  .horizontal-rule-wrapper {
+    display: none;
+  }
+
+  .why-points-wrapper {
+    margin-left: 50px;
+    gap: var(--sm-row-gap) 0px;
+  }
+
+  .point {
+    flex-direction: row;
+    gap: 0px 90px;
+    width: fit-content;
+  }
+
+  .icon-rule {
+    margin-left: 0px;
+    width: 0px;
+  }
+
+  .point-description {
+    display: flex;
+    align-items: center;
+  }
+
+  .basic-elements {
+    padding-left: 0px;
+  }
+
+  .components {
+    padding-left: 0px;
+  }
+
+  .combined-components {
+    position: initial;
+  }
+
+  .page-layouts {
+    padding-left: 0px;
+  }
+}
+
 /* Ipads and Tablets - Portrait */
-@media screen and (768px <= width <= 1023px) {
+@media screen and (360px <= width <= 1023px) {
   [aria-controls="navbarDropdown"] {
     display: block;
   }
@@ -117,6 +161,7 @@
     text-align: center;
     padding-top: 20px;
     padding-bottom: 40px;
+    padding-left: 0;
   }
 
   .video-wrapper {
@@ -127,12 +172,16 @@
     gap: var(--md-row-gap) 0px;
   }
 
-  .testimonial-img {
-    left: 70px;
-  }
-
   .testimonial-content {
     text-align: center;
+  }
+
+  .testimonial-client {
+    left: 100px;
+  }
+
+  .dots {
+    right: 90px;
   }
 
   .company {
@@ -185,6 +234,22 @@
     text-align: -webkit-center;
   }
 }
+
+@media screen and (max-width: 475px) {
+  .testimonial-img {
+    height: 300px;
+    width: 300px;
+  }
+
+  .testimonial-client {
+    top: 30px;
+  }
+
+  .dots {
+    right: 40px;
+  }
+}
+
 @media screen and (360px <= width <= 768px) {
 }
 

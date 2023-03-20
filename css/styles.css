@@ -449,15 +449,20 @@ a {
 }
 
 .basic-elements {
-  padding-left: 24px;
+  padding-left: 27px;
 }
 
 .components {
   padding-left: 28px;
 }
 
+.combined-components {
+  position: relative;
+  right: 10px;
+}
+
 .page-layouts {
-  padding-left: 40px;
+  padding-left: 30px;
 }
 
 .templates-ei-wrapper {
