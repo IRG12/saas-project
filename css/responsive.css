@@ -256,9 +256,7 @@
     grid-template-columns: auto;
     justify-content: center;
   }
-}
 
-@media screen and (360px <= width <= 767px) {
   .hire-us-container {
     grid-template-columns: repeat(
       auto-fit,
@@ -266,6 +264,31 @@
     );
   }
 
+  .responsive-wrapper {
+    flex-direction: column;
+  }
+
+  .responsive-wrapper-left .pitch {
+    width: initial;
+  }
+
+  .pitch,
+  .testimonial-quote {
+    text-align: center;
+  }
+
+  .user-input-wrapper,
+  .selects-wrapper {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .privacy-wrapper label:nth-child(2) {
+    display: none;
+  }
+}
+
+@media screen and (360px <= width <= 767px) {
   .clients {
     grid-template-columns: 1fr;
     gap: var(--md-row-gap) 0px;
