@@ -11,7 +11,9 @@
   .horizontal-rule-wrapper {
     display: none;
   }
+}
 
+@media screen and (max-width: 667px) {
   .why-points-wrapper {
     margin-left: 50px;
     gap: var(--sm-row-gap) 0px;
@@ -220,7 +222,7 @@
   }
 }
 
-@media screen and (520px <= width <= 1013px) {
+@media screen and (560px <= width <= 1023px) {
   .price-card {
     width: auto;
   }
@@ -232,6 +234,41 @@
 
   .video-link {
     text-align: -webkit-center;
+  }
+}
+
+@media screen and (360px <= width <= 559px) {
+  .sales-wrapper {
+    grid-template-columns: 325px;
+  }
+
+  .price-card {
+    padding: 30px;
+    text-align: -webkit-center;
+    width: initial;
+  }
+
+  .price-rate {
+    text-align: center;
+  }
+
+  .perks-wrapper {
+    grid-template-columns: auto;
+    justify-content: center;
+  }
+}
+
+@media screen and (360px <= width <= 767px) {
+  .hire-us-container {
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(var(--md2-grid-min), var(--md2-grid-max))
+    );
+  }
+
+  .clients {
+    grid-template-columns: 1fr;
+    gap: var(--md-row-gap) 0px;
   }
 }
 
@@ -248,10 +285,4 @@
   .dots {
     right: 40px;
   }
-}
-
-@media screen and (360px <= width <= 768px) {
-}
-
-@media screen and (360px <= width <= 768px) {
 }

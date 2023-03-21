@@ -40,10 +40,12 @@
 
   --sm-grid-min: 150px;
   --md-grid-min: 225px;
+  --md2-grid-min: 275px;
   --lg-grid-min: 400px;
 
   --sm-grid-max: 200px;
   --md-grid-max: 250px;
+  --md2-grid-max: 300px;
   --lg-grid-max: 500px;
 
   --container-width: 100%;
@@ -111,6 +113,7 @@ section .title-description p {
   height: var(--fixed-size-600);
   width: var(--container-width);
   position: absolute;
+  z-index: -1;
 }
 
 nav {
