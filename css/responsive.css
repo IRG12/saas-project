@@ -167,6 +167,17 @@
 
   .footer-top {
     text-align: -webkit-center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-top-left {
+    margin-inline: auto;
+  }
+
+  .footer-top-right {
+    width: fit-content;
   }
 
   .footer-bottom-top,
