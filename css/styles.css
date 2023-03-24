@@ -56,9 +56,12 @@
   --fixed-size-600: 600px;
   --percent-size-90: 90%;
 
-  --sm-logo: 45px;
-  --md-logo: 55px;
-  --lg-logo: 60px;
+  --sm-logo: 55px;
+  --md-logo: 65px;
+  --lg-logo: 70px;
+  --sm-res-logo: 65px;
+  --md-res-logo: 80px;
+  --lg-res-logo: 90px;
 
   /* fs: font-size */
   --xs-fs: 10px;
@@ -303,7 +306,7 @@ a {
 
 .logo-wrapper[data-type="google-a"] {
   bottom: 15px;
-  right: 260px;
+  right: 235px;
   height: var(--sm-logo);
   width: var(--sm-logo);
   padding: 7px;

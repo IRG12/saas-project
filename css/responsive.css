@@ -7,53 +7,7 @@
   }
 }
 
-@media screen and (max-width: 716px) {
-  .horizontal-rule-wrapper {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 667px) {
-  .why-points-wrapper {
-    margin-left: 50px;
-    gap: var(--sm-row-gap) 0px;
-  }
-
-  .point {
-    flex-direction: row;
-    gap: 0px 90px;
-    width: fit-content;
-  }
-
-  .icon-rule {
-    margin-left: 0px;
-    width: 0px;
-  }
-
-  .point-description {
-    display: flex;
-    align-items: center;
-  }
-
-  .basic-elements {
-    padding-left: 0px;
-  }
-
-  .components {
-    padding-left: 0px;
-  }
-
-  .combined-components {
-    position: initial;
-  }
-
-  .page-layouts {
-    padding-left: 0px;
-  }
-}
-
-/* Ipads and Tablets - Portrait */
-@media screen and (360px <= width <= 1023px) {
+@media screen and (max-width: 1023px) {
   [aria-controls="navbarDropdown"] {
     display: block;
   }
@@ -98,61 +52,61 @@
     justify-content: center;
   }
 
-  .logo-wrapper[data-type="asana"] {
+  /* .logo-wrapper[data-type="asana"] {
     top: 0;
     right: 0;
-    height: var(--lg-logo);
-    width: var(--lg-logo);
+    height: var(--lg-norm-logo);
+    width: var(--lg-norm-logo);
     padding: 12px;
   }
 
   .logo-wrapper[data-type="atlassian"] {
     top: 20px;
     right: 240px;
-    height: var(--lg-logo);
-    width: var(--lg-logo);
+    height: var(--lg-norm-logo);
+    width: var(--lg-norm-logo);
     padding: 12px;
   }
 
   .logo-wrapper[data-type="calendar"] {
     bottom: -10px;
     right: 0;
-    height: var(--md-logo);
-    width: var(--md-logo);
+    height: var(--md-norm-logo);
+    width: var(--md-norm-logo);
     padding: 12px;
   }
 
   .logo-wrapper[data-type="google-a"] {
     bottom: 45px;
     right: 260px;
-    height: var(--sm-logo);
-    width: var(--sm-logo);
+    height: var(--sm-norm-logo);
+    width: var(--sm-norm-logo);
     padding: 7px;
   }
 
   .logo-wrapper[data-type="google"] {
     top: 0;
     left: 0;
-    height: var(--sm-logo);
-    width: var(--sm-logo);
+    height: var(--sm-norm-logo);
+    width: var(--sm-norm-logo);
     padding: 8px;
   }
 
   .logo-wrapper[data-type="paypal"] {
     bottom: 120px;
     left: 20px;
-    height: var(--lg-logo);
-    width: var(--lg-logo);
+    height: var(--lg-norm-logo);
+    width: var(--lg-norm-logo);
     padding: 12px;
   }
 
   .logo-wrapper[data-type="weave"] {
     bottom: 100px;
     right: 80px;
-    height: var(--md-logo);
-    width: var(--md-logo);
+    height: var(--md-norm-logo);
+    width: var(--md-norm-logo);
     padding: 10px;
-  }
+  } */
 
   .benefits-wrapper-2 {
     grid-template-columns: 1fr;
@@ -199,6 +153,130 @@
     justify-content: center;
   }
 }
+
+@media screen and (max-width: 716px) {
+  .horizontal-rule-wrapper {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 667px) {
+  .why-points-wrapper {
+    margin-left: 50px;
+    gap: var(--sm-row-gap) 0px;
+  }
+
+  .point {
+    flex-direction: row;
+    gap: 0px 90px;
+    width: fit-content;
+  }
+
+  .icon-rule {
+    margin-left: 0px;
+    width: 0px;
+  }
+
+  .point-description {
+    display: flex;
+    align-items: center;
+  }
+
+  .basic-elements {
+    padding-left: 0px;
+  }
+
+  .components {
+    padding-left: 0px;
+  }
+
+  .combined-components {
+    position: initial;
+  }
+
+  .page-layouts {
+    padding-left: 0px;
+  }
+}
+
+@media screen and (max-width: 475px) {
+  .hero-wrapper {
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(var(--md2-grid-min), var(--md2-grid-max))
+    );
+  }
+
+  .logo-wrapper[data-type="asana"] {
+    top: 0;
+    right: 0;
+    height: var(--lg-res-logo);
+    width: var(--lg-res-logo);
+    padding: 12px;
+  }
+
+  .logo-wrapper[data-type="atlassian"] {
+    height: var(--md-res-logo);
+    width: var(--md-res-logo);
+    top: 30px;
+    right: 115px;
+  }
+
+  .logo-wrapper[data-type="calendar"] {
+    height: var(--md-res-logo);
+    width: var(--md-res-logo);
+    bottom: -50px;
+  }
+
+  .logo-wrapper[data-type="google-a"] {
+    height: var(--sm-res-logo);
+    width: var(--sm-res-logo);
+    bottom: -30px;
+    right: 125px;
+  }
+
+  .logo-wrapper[data-type="google"] {
+    top: 0;
+    left: 0;
+    height: var(--md-res-logo);
+    width: var(--md-res-logo);
+    padding: 8px;
+  }
+
+  .logo-wrapper[data-type="paypal"] {
+    height: var(--lg-res-logo);
+    width: var(--lg-res-logo);
+    bottom: 40px;
+    left: 0px;
+  }
+
+  .logo-wrapper[data-type="weave"] {
+    height: var(--md-res-logo);
+    width: var(--md-res-logo);
+    bottom: 70px;
+    right: 70px;
+  }
+
+  .testimonial-img {
+    height: 300px;
+    width: 300px;
+  }
+
+  .testimonial-client {
+    top: 30px;
+    left: 95px;
+  }
+
+  .dots {
+    right: 45px;
+  }
+
+  .testimonial-content {
+    padding-top: 110px;
+  }
+}
+
+/* Ipads and Tablets - Portrait */
 
 @media screen and (560px <= width <= 1023px) {
   .testimonial-wrapper {
@@ -337,25 +415,5 @@
   .clients {
     grid-template-columns: 1fr;
     gap: var(--md-row-gap) 0px;
-  }
-}
-
-@media screen and (max-width: 475px) {
-  .testimonial-img {
-    height: 300px;
-    width: 300px;
-  }
-
-  .testimonial-client {
-    top: 30px;
-    left: 95px;
-  }
-
-  .dots {
-    right: 45px;
-  }
-
-  .testimonial-content {
-    padding-top: 110px;
   }
 }
