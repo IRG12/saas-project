@@ -59,9 +59,9 @@
   --sm-logo: 55px;
   --md-logo: 65px;
   --lg-logo: 70px;
-  --sm-res-logo: 65px;
-  --md-res-logo: 80px;
-  --lg-res-logo: 90px;
+  --sm-res-logo: 60px;
+  --md-res-logo: 75px;
+  --lg-res-logo: 80px;
 
   /* fs: font-size */
   --xs-fs: 10px;
@@ -171,14 +171,17 @@ nav {
   max-width: max-content;
 }
 
+.nav-ul-wrapper {
+  flex: 1;
+}
+
 .nav-items {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: space-around;
   gap: 0px 45px;
   font-weight: var(--weight-6);
   font-size: var(--sm2-fs);
-  flex: 2;
 }
 
 .nav-link {
@@ -282,7 +285,7 @@ a {
 
 .logo-wrapper[data-type="asana"] {
   top: 0;
-  right: 0;
+  right: 30px;
   height: var(--lg-logo);
   width: var(--lg-logo);
   padding: 12px;
@@ -290,7 +293,7 @@ a {
 
 .logo-wrapper[data-type="atlassian"] {
   top: 20px;
-  right: 190px;
+  right: 220px;
   height: var(--lg-logo);
   width: var(--lg-logo);
   padding: 12px;
@@ -298,7 +301,7 @@ a {
 
 .logo-wrapper[data-type="calendar"] {
   bottom: -10px;
-  right: 0;
+  right: 30px;
   height: var(--md-logo);
   width: var(--md-logo);
   padding: 12px;
@@ -314,7 +317,7 @@ a {
 
 .logo-wrapper[data-type="google"] {
   top: 0;
-  left: 80px;
+  left: 50px;
   height: var(--sm-logo);
   width: var(--sm-logo);
   padding: 8px;
@@ -322,7 +325,7 @@ a {
 
 .logo-wrapper[data-type="paypal"] {
   bottom: 85px;
-  left: 70px;
+  left: 40px;
   height: var(--lg-logo);
   width: var(--lg-logo);
   padding: 12px;
@@ -330,7 +333,7 @@ a {
 
 .logo-wrapper[data-type="weave"] {
   bottom: 100px;
-  right: 80px;
+  right: 110px;
   height: var(--md-logo);
   width: var(--md-logo);
   padding: 10px;

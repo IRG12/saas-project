@@ -225,14 +225,14 @@
   .logo-wrapper[data-type="calendar"] {
     height: var(--md-res-logo);
     width: var(--md-res-logo);
-    bottom: -50px;
+    bottom: -55px;
   }
 
   .logo-wrapper[data-type="google-a"] {
     height: var(--sm-res-logo);
     width: var(--sm-res-logo);
-    bottom: -30px;
-    right: 125px;
+    bottom: -15px;
+    right: 130px;
   }
 
   .logo-wrapper[data-type="google"] {
@@ -246,15 +246,15 @@
   .logo-wrapper[data-type="paypal"] {
     height: var(--lg-res-logo);
     width: var(--lg-res-logo);
-    bottom: 40px;
+    bottom: 50px;
     left: 0px;
   }
 
   .logo-wrapper[data-type="weave"] {
     height: var(--md-res-logo);
     width: var(--md-res-logo);
-    bottom: 70px;
-    right: 70px;
+    bottom: 75px;
+    right: 60px;
   }
 
   .testimonial-img {
