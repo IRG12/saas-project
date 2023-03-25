@@ -16,13 +16,21 @@
     display: none;
   }
 
+  [aria-expanded="false"] .closed {
+    display: none;
+  }
+  [aria-expanded="true"] .closed {
+    display: inline-block;
+  }
+  [aria-expanded="true"] .open {
+    display: none;
+  }
+
   [aria-expanded="true"] ~ .nav-ul-wrapper {
     position: absolute;
     top: 91px;
     background: var(--white);
     width: 100vw;
-    border-radius: 3px;
-    box-shadow: var(--box-shadow-norm);
     padding: 20px;
   }
 
@@ -93,6 +101,14 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+  }
+
+  #scrollUp {
+    font-size: 20px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    bottom: 20px;
+    right: 40px;
   }
 }
 
@@ -395,8 +411,6 @@
     left: 0;
     background: var(--white);
     width: 100vw;
-    border-radius: 3px;
-    box-shadow: var(--box-shadow-norm);
     flex-direction: column;
   }
 

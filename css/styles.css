@@ -51,6 +51,7 @@
   --container-width: 100%;
   --img-width: 100%;
   --img-height: 100%;
+  --fixed-size-30: 30px;
   --fixed-size-50: 50px;
   --fixed-size-100: 100px;
   --fixed-size-600: 600px;
@@ -967,4 +968,16 @@ footer {
 
 .disclaimer {
   line-height: var(--p-lh-norm);
+}
+
+#scrollUp {
+  background: var(--link);
+  font-size: var(--fixed-size-30);
+  padding: 10px 15px;
+  border-radius: 10px;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  cursor: pointer;
+  z-index: 100;
 }

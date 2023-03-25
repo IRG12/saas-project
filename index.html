@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./css/responsive.css" />
   </head>
   <body>
+    <div id="pageTop"></div>
       <div class="nav-hero-container">
         <div class="hero-bg-wrapper">
           <div class="hero-bg-left"></div>
@@ -23,7 +24,8 @@
             aria-expanded="false"
             aria-controls="navbarDropdown"
           >
-            <span> &#9776 </span>
+            <span class="open">&#9776</span>
+            <span class="closed">&#10005</span>
           </button>
           <div class="nav-logo">
             <a class="navbar-brand" href="">
@@ -746,6 +748,7 @@ Tell us more about your projects, needs, and timeline please... </textarea
         </div>
       </div>
     </footer>
+    <a id="scrollUp" href="#pageTop"><i class="fa-solid fa-arrow-up"></i></a>
   </body>
   <!-- javascript (<script>) goes at the end the body so the skeleton (html) loads first, then your css, then your javascript last -->
     <script src="https://kit.fontawesome.com/83edd3b365.js" crossorigin="anonymous"></script>
