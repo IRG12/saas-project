@@ -1,13 +1,13 @@
 /* media queries */
 /* media queries are cascading (definition 2: arrange (a number of devices or objects) in a series or sequence). Largest to smallest width. Top to bottom*/
 
-@media screen and (max-width: 1025px) {
+@media screen and (max-width: 64.063rem) {
   #block-hr {
     display: none;
   }
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 63.938rem) {
   [aria-controls="navbarDropdown"] {
     display: block;
   }
@@ -28,19 +28,19 @@
 
   [aria-expanded="true"] ~ .nav-ul-wrapper {
     position: absolute;
-    top: 91px;
+    top: 5.688rem;
     background: var(--white);
     width: 100vw;
-    padding: 20px;
+    padding: 1.25rem;
   }
 
   [aria-expanded="true"] ~ .nav-ul-wrapper .link .blue-border {
-    padding: 5px 8px;
+    padding: 0.313rem 0.5rem;
   }
 
   .nav-items {
     justify-content: center;
-    gap: 20px 30px;
+    gap: 1.25rem 1.875rem;
   }
 
   .link {
@@ -50,7 +50,7 @@
   .hero-wrapper,
   .hero-wrapper-left {
     text-align: center;
-    gap: var(--md-row-gap) 0px;
+    gap: var(--md-row-gap) 0rem;
   }
 
   .hero-wrapper-left .external-wrapper-links {
@@ -65,8 +65,8 @@
 
   .benefits-wrapper-2-left {
     text-align: center;
-    padding-top: 20px;
-    padding-bottom: 40px;
+    padding-top: 1.25rem;
+    padding-bottom: 2.5rem;
     padding-left: 0;
   }
 
@@ -75,11 +75,11 @@
   }
 
   .sales-wrapper {
-    gap: var(--md-row-gap) 0px;
+    gap: var(--md-row-gap) 0rem;
   }
 
   .perks-wrapper {
-    gap: 50px 100px;
+    gap: 3.125rem 6.25rem;
     grid-template-columns: repeat(
       auto-fit,
       minmax(var(--sm-grid-min), var(--sm-grid-max))
@@ -88,8 +88,8 @@
 
   .responsive-wrapper {
     display: flex;
-    gap: 0px var(--md-col-gap);
-    padding-bottom: 30px;
+    gap: 0rem var(--md-col-gap);
+    padding-bottom: 1.875rem;
   }
 
   .responsive-wrapper-left .pitch {
@@ -104,15 +104,15 @@
   }
 
   #scrollUp {
-    font-size: 20px;
-    padding: 5px 10px;
+    font-size: 1.25rem;
+    padding: 0.313rem 0.625rem;
     border-radius: 5px;
-    bottom: 20px;
-    right: 40px;
+    bottom: 1.25rem;
+    right: 2.5rem;
   }
 }
 
-@media screen and (max-width: 716px) {
+@media screen and (max-width: 44.75rem) {
   .horizontal-rule-wrapper {
     display: none;
   }
@@ -120,7 +120,7 @@
   .footer-top,
   .footer-top-right,
   .footer-bottom-top {
-    gap: 30px 70px;
+    gap: 1.875rem 4.375rem;
   }
 
   .footer-top {
@@ -155,21 +155,21 @@
   }
 }
 
-@media screen and (max-width: 667px) {
+@media screen and (max-width: 41.688rem) {
   .why-points-wrapper {
-    margin-left: 50px;
-    gap: var(--sm-row-gap) 0px;
+    margin-left: 3.125rem;
+    gap: var(--sm-row-gap) 0rem;
   }
 
   .point {
     flex-direction: row;
-    gap: 0px 90px;
+    gap: 0rem 5.625rem;
     width: fit-content;
   }
 
   .icon-rule {
-    margin-left: 0px;
-    width: 0px;
+    margin-left: 0rem;
+    width: 0rem;
   }
 
   .point-description {
@@ -178,11 +178,11 @@
   }
 
   .basic-elements {
-    padding-left: 0px;
+    padding-left: 0rem;
   }
 
   .components {
-    padding-left: 0px;
+    padding-left: 0rem;
   }
 
   .combined-components {
@@ -190,27 +190,27 @@
   }
 
   .page-layouts {
-    padding-left: 0px;
+    padding-left: 0rem;
   }
 }
 
-@media screen and (max-width: 559px) {
+@media screen and (max-width: 34.938rem) {
   .testimonial-wrapper {
-    margin: var(--sm-mtb-wrapper) 0px;
+    margin: var(--sm-mtb-wrapper) 0rem;
     grid-template-columns: 1fr;
   }
 
   .testimonial-content {
     text-align: center;
-    padding-top: 130px;
+    padding-top: 8.125rem;
   }
 
   .testimonial-client {
-    left: 95px;
+    left: 5.938rem;
   }
 
   .dots {
-    right: 95px;
+    right: 5.938rem;
   }
 
   .company {
@@ -220,7 +220,7 @@
   }
 }
 
-@media screen and (max-width: 475px) {
+@media screen and (max-width: 29.688rem) {
   .hero-wrapper {
     grid-template-columns: repeat(
       auto-fit,
@@ -233,27 +233,27 @@
     right: 0;
     height: var(--lg-res-logo);
     width: var(--lg-res-logo);
-    padding: 12px;
+    padding: 0.75rem;
   }
 
   .logo-wrapper[data-type="atlassian"] {
     height: var(--md-res-logo);
     width: var(--md-res-logo);
-    top: 30px;
-    right: 115px;
+    top: 1.875rem;
+    right: 7.188rem;
   }
 
   .logo-wrapper[data-type="calendar"] {
     height: var(--md-res-logo);
     width: var(--md-res-logo);
-    bottom: -55px;
+    bottom: -3.438rem;
   }
 
   .logo-wrapper[data-type="google-a"] {
     height: var(--sm-res-logo);
     width: var(--sm-res-logo);
-    bottom: -15px;
-    right: 130px;
+    bottom: -0.938rem;
+    right: 8.125rem;
   }
 
   .logo-wrapper[data-type="google"] {
@@ -261,48 +261,48 @@
     left: 0;
     height: var(--md-res-logo);
     width: var(--md-res-logo);
-    padding: 8px;
+    padding: 0.5rem;
   }
 
   .logo-wrapper[data-type="paypal"] {
     height: var(--lg-res-logo);
     width: var(--lg-res-logo);
-    bottom: 50px;
-    left: 0px;
+    bottom: 3.125rem;
+    left: 0rem;
   }
 
   .logo-wrapper[data-type="weave"] {
     height: var(--md-res-logo);
     width: var(--md-res-logo);
-    bottom: 75px;
-    right: 60px;
+    bottom: 4.688rem;
+    right: 3.75rem;
   }
 
   .testimonial-img {
-    height: 300px;
-    width: 300px;
+    height: 18.75rem;
+    width: 18.75rem;
   }
 
   .testimonial-client {
-    top: 30px;
-    left: 95px;
+    top: 1.875rem;
+    left: 5.938rem;
   }
 
   .dots {
-    right: 45px;
+    right: 2.813rem;
   }
 
   .testimonial-content {
-    padding-top: 110px;
+    padding-top: 6.875rem;
   }
 }
 
 /* Ipads and Tablets - Portrait */
 
-@media screen and (560px <= width <= 1023px) {
+@media screen and (35rem <= width <= 63.938rem) {
   .testimonial-wrapper {
-    gap: var(--md-row-gap) 0px;
-    margin: var(--sm-mtb-wrapper) 0px;
+    gap: var(--md-row-gap) 0rem;
+    margin: var(--sm-mtb-wrapper) 0rem;
   }
 
   .testimonial-content {
@@ -310,11 +310,11 @@
   }
 
   .testimonial-client {
-    left: 100px;
+    left: 6.25rem;
   }
 
   .dots {
-    right: 90px;
+    right: 5.625rem;
   }
 
   .company {
@@ -337,13 +337,13 @@
   }
 }
 
-@media screen and (360px <= width <= 559px) {
+@media screen and (22.5rem <= width <= 34.938rem) {
   .sales-wrapper {
-    grid-template-columns: 325px;
+    grid-template-columns: 20.313rem;
   }
 
   .price-card {
-    padding: 30px;
+    padding: 1.875rem;
     text-align: -webkit-center;
     width: initial;
   }
@@ -380,7 +380,7 @@
   .user-input-wrapper,
   .selects-wrapper {
     flex-direction: column;
-    gap: 20px;
+    gap: 1.25rem;
   }
 
   .privacy-wrapper label:nth-child(2) {
@@ -388,10 +388,10 @@
   }
 }
 
-@media screen and (360px <= width <= 767px) {
+@media screen and (22.5rem <= width <= 47.938rem) {
   .clients {
     grid-template-columns: 1fr;
-    gap: var(--md-row-gap) 0px;
+    gap: var(--md-row-gap) 0rem;
   }
 
   [aria-controls="navbarDropdown"] {
@@ -404,10 +404,10 @@
 
   [aria-expanded="true"] ~ .nav-ul-wrapper {
     display: flex;
-    padding: 20px 0px;
-    gap: 50px;
+    padding: 1.25rem 0rem;
+    gap: 3.125rem;
     position: absolute;
-    top: 91px;
+    top: 5.688rem;
     left: 0;
     background: var(--white);
     width: 100vw;
@@ -415,7 +415,7 @@
   }
 
   [aria-expanded="true"] ~ .nav-ul-wrapper .link .blue-border {
-    padding: 5px 8px;
+    padding: 0.313rem 0.5rem;
   }
 
   .nav-items {
